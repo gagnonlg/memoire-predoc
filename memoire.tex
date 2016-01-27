@@ -6,6 +6,10 @@
 \usepackage{fullpage}
 \usepackage{setspace}
 
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+
 \usepackage{blindtext}
 
 \title{Recherce de partenaires supersymmétriques des gluons se
@@ -16,9 +20,8 @@
 \begin{document}
 
 \maketitle{}
-\doublespacing
-
 \tableofcontents{}
+\doublespacing
 
 \chapter{Le Modèle Standard et ses limitations}
 \label{sec:ms}
@@ -40,8 +43,16 @@
 \section{Survol théorique}
 \label{sec:susy:th}
 
+\subsection{le MSSSM}
+\label{sec:susy:th:mssm}
+
 \section{Contraintes expérimentales}
 \label{sec:susy:contraintes}
+
+\subsection{le pMSSM}
+\label{sec:susy:contraintes:pmssm}
+
+
 
 \singlespacing{}
 \chapter{Le Grand Collisionneur de Hadrons (LHC) et le détecteur
@@ -55,6 +66,24 @@
 \section{Le détecteur ATLAS}
 \label{sec:lhc_atlas:atlas}
 
+\subsection{Le détecteur interne}
+\label{sec:lhc_atlas:atlas:indet}
+
+\subsection{Les calorimètres}
+\label{sec:lhc_atlas:atlas:calo}
+
+\subsection{Le spectromètre à muon}
+\label{sec:lhc_atlas:atlas:mu}
+
+\subsection{Aquisition des données}
+\label{sec:lhc_atlas:atlas:daq}
+
+\subsubsection{Les déclancheurs}
+\label{sec:lhc_atlas:atlas:daq:trig}
+
+
+
+
 \singlespacing{}
 \chapter{La reconstruction de quarks top à haute énergie à ATLAS}
 \label{sec:top}
@@ -65,6 +94,19 @@
 
 \section{Les méthodes de sous-structure}
 \label{sec:top:sous_structure}
+
+\subsection{Variables de sous-structure}
+\label{sec:top:sous_structure:variables}
+
+\subsection{Shower Deconstruction}
+\label{sec:top:sous_structure:shower}
+
+\subsection{HepTopTagger}
+\label{sec:top:sous_structure:hep}
+
+\subsection{Comparaison des différentes méthodes}
+\label{sec:top:sous_structure:comp}
+
 
 \section{Identification par apprentissage machine}
 \label{sec:top:ml}
