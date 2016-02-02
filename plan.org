@@ -1,0 +1,108 @@
+* Le modèle standard et ses limitations
+** Survol théorique
+*** Structure du modèle standard
+**** Secteur EWK
+**** Secteur QCD
+**** Secteur Higgs
+**** Paramétrisation (et mesures)
+***** Higgs mass
+***** Fermion mass and mixing
+***** Strong coupling constant
+***** Z mass
+***** Fermi Constant
+***** Fine structure constant
+*** Particules du MS
+** Validation expérimentale
+*** EWK
+*** QCD
+**** jets
+*** Higgs
+** Problèmes avec le modèle standard
+**** problème de la hiérarchie
+**** matière sombre
+**** unification
+* L'extension supersymmétrique du Modèle Standard
+** Introduction à la supersymmétrie
+**** Théorème de Noether
+**** Supersymmétrie
+**** Implications
+***** Nouvelles particules
+***** Symmétrie brisée
+**** Solutions aux problèmes du Modèle Standard
+***** problème de la hiérarchie
+***** matière sombre
+***** unification
+** Le Modèle Standard Minimalement Supersymmétrique (MSSM)
+*** Description du MSSM
+**** Particules supersymmétriques
+**** Paramètres du MSSM
+**** Problèmes
+*** Mécanismes de brisure de symmétrie
+**** Concept de secteur caché
+**** mSUGRA/CMSSM
+***** Explication
+***** Paramètres
+***** Contraintes
+**** GMSB
+***** Explication
+***** Paramètres
+***** Contraintes
+**** Autres
+*** Le MSSM phénoménologique
+* Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
+** Le LHC
+** Le détecteur ATLAS
+*** Le détecteur interne
+*** Les calorimètres
+*** Le spectromètre à muon
+*** Aquisition des données
+**** TDAQ
+**** Trigger
+* La reconstruction des quarks top à haute énergie à ATLAS
+** Les quarks tops à haute impulsion transverse
+** Les méthodes de sous-structure
+*** Échelle de division
+*** N-subjetiness
+*** Performance
+** Identification par apprentissage machine
+*** Introduction à l'apprentissage machine
+**** Définition
+**** Réseaux de neurones
+**** Apprentissage profond
+*** Identification des tops
+*** Identification des bosons W par apprentissage profond
+* La recherche de la supersymmétrie à ATLAS
+** Signatures expérimentales
+**** Mécanismes de production
+***** collisions gluon-gluon domine
+***** production: sq-sq, sq-gl, gl-gl
+**** Signatures
+***** high-pt jets
+***** significant MET
+***** high m_eff
+***** leptons
+**** quark tops boosté dans l'état final
+** Les modèles simplifiés
+** Recherche des gluinos se désintégrant en tops
+*** Modèle Gtt
+***** Description
+***** Topologie état final
+***** Diagramme
+*** Stratégie d'analyse
+**** Variables discriminatoires
+***** leptons
+***** jets
+***** b-jets
+***** large-R jets
+***** MET
+***** meff
+***** mt
+***** mtb
+**** Régions de signal
+**** Estimation du bruit de fond
+**** Technique statistique
+*** Résultats
+**** Nombres d'événements
+**** limites sur les masses
+** Recherches par apprentissage machine
+
