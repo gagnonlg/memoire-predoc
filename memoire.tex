@@ -1,4 +1,4 @@
-\documentclass[12pt,canadien]{report}
+\documentclass[12pt,canadien]{article}
 
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
@@ -6,120 +6,161 @@
 \usepackage{fullpage}
 \usepackage{setspace}
 
-\setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{5}
-
+%\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{5}
 
 \usepackage{blindtext}
 
-\title{Recherce de partenaires supersymmétriques des gluons se
-  désintégrant en quarks top de hautes énergies à l'expérience ATLAS}
+\title{\textbf{Recherce de partenaires supersymmétriques des gluons se
+  désintégrant en quarks top de hautes énergies à l'expérience ATLAS}}
 
-\author{Louis-Guillaume Gagnon}
+\author{Louis-Guillaume Gagnon \\ Candidat au doctorat en physique \\ Mémoire présenté dans le cadre de l'examen général de synthèse}
 
 \begin{document}
 
-\maketitle{}
+
+%titlepage
+\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{0.75\linewidth}
+    \centering
+%University logo
+    %\includegraphics[width=0.3\linewidth]{logo.pdf}
+    %\rule{0.4\linewidth}{0.15\linewidth}\par
+    \vspace{3cm}
+%Thesis title
+    {\bf {\Large Recherce de partenaires supersymmétriques des gluons se
+  désintégrant en quarks top de hautes énergies à l'expérience ATLAS \\ }}
+    \vspace{3cm}
+%Author's name
+    {{\Large Louis-Guillaume Gagnon}\\Candidat au doctorat\\ Département de physique\\ Université de Montréal\par}
+    \vspace{3cm}
+%Degree
+    {\Large Mémoire présenté dans le cadre de l'examen général de synthèse\\}
+    \vspace{4cm}
+%Date
+    {\Large \today}
+\end{minipage}
+\end{center}
+\clearpage
+
+
+%\maketitle
+%\clearpage
 \tableofcontents{}
+\clearpage
 \doublespacing
 
-\chapter{Le Modèle Standard et ses limitations}
+\section{Le Modèle Standard et ses limitations}
 \label{sec:ms}
 
-\section{Survol théorique}
+\blindtext
+
+\subsection{Survol théorique}
 \label{sec:ms:th}
 
-\section{Validation expérimentale}
+\blindtext[5]
+
+\subsection{Validation expérimentale}
 \label{sec:ms:exp}
 
-\section{Problèmes avec le Modèle Standard}
+\subsection{Problèmes avec le Modèle Standard}
 \label{sec:ms:problemes}
 
 \singlespacing{}
-\chapter{L'extension supersymmétrique du Modèle Standard}
+\section{L'extension supersymmétrique du Modèle Standard}
 \label{sec:susy}
 \doublespacing{}
 
-\section{Survol théorique}
+\subsection{Survol théorique}
 \label{sec:susy:th}
 
-\subsection{le MSSSM}
+\subsubsection{le MSSSM}
 \label{sec:susy:th:mssm}
 
-\section{Contraintes expérimentales}
+\subsection{Contraintes expérimentales}
 \label{sec:susy:contraintes}
 
-\subsection{le pMSSM}
+\subsubsection{le pMSSM}
 \label{sec:susy:contraintes:pmssm}
 
 
 
 \singlespacing{}
-\chapter{Le Grand Collisionneur de Hadrons (LHC) et le détecteur
+\section{Le Grand Collisionneur de Hadrons (LHC) et le détecteur
   ATLAS}
 \label{sec:lhc_atlas}
 \doublespacing{}
 
-\section{Le LHC}
+\subsection{Le LHC}
 \label{sec:lhc_atlas:lhc}
 
-\section{Le détecteur ATLAS}
+\subsection{Le détecteur ATLAS}
 \label{sec:lhc_atlas:atlas}
 
-\subsection{Le détecteur interne}
+\subsubsection{Le détecteur interne}
 \label{sec:lhc_atlas:atlas:indet}
 
-\subsection{Les calorimètres}
+\subsubsection{Les calorimètres}
 \label{sec:lhc_atlas:atlas:calo}
 
-\subsection{Le spectromètre à muon}
+\subsubsection{Le spectromètre à muon}
 \label{sec:lhc_atlas:atlas:mu}
 
-\subsection{Aquisition des données}
+\subsubsection{Aquisition des données}
 \label{sec:lhc_atlas:atlas:daq}
 
-\subsubsection{Les déclancheurs}
-\label{sec:lhc_atlas:atlas:daq:trig}
-
-
-
+% \subsubsubsection{Les déclancheurs}
+% \label{sec:lhc_atlas:atlas:daq:trig}
 
 \singlespacing{}
-\chapter{La reconstruction de quarks top à haute énergie à ATLAS}
+\section{La reconstruction de quarks top à haute énergie à ATLAS}
 \label{sec:top}
 \doublespacing{}
 
-\section{Les quarks tops à haute impulsion transverse}
+\subsection{Les quarks tops à haute impulsion transverse}
 \label{sec:top:boosted}
 
-\section{Les méthodes de sous-structure}
+\subsection{Les méthodes de sous-structure}
 \label{sec:top:sous_structure}
 
-\subsection{Variables de sous-structure}
+\subsubsection{Variables de sous-structure}
 \label{sec:top:sous_structure:variables}
 
-\subsection{Shower Deconstruction}
+\subsubsection{Shower Deconstruction}
 \label{sec:top:sous_structure:shower}
 
-\subsection{HepTopTagger}
+\subsubsection{HepTopTagger}
 \label{sec:top:sous_structure:hep}
 
-\subsection{Comparaison des différentes méthodes}
+\subsubsection{Comparaison des différentes méthodes}
 \label{sec:top:sous_structure:comp}
 
 
-\section{Identification par apprentissage machine}
+\subsection{Identification par apprentissage machine}
 \label{sec:top:ml}
 
 % le titre donné dans la lettre terminait par: «avec un focus sur la
 % recherche du partenaire supersymmétrique du gluon, le gluino, se
 % désintégrant en quarks top »
 \singlespacing{}
-\chapter{La recherce de la Supersymmétrie à ATLAS}
+\section{La recherce de la Supersymmétrie à ATLAS}
 \label{susy_atlas}
 \doublespacing{}
 
-\section{Le modèle Gtt}
+\subsection{Les modèles simplifiés}
+\label{sec:susy_atlas:modele_simple}
+
+\subsection{Désintégrations des gluinos en tops: Le modèle Gtt}
 \label{sec:susy_atlas:gtt}
+
+\subsection{Recherches par apprentissage machine}
+\label{sec:susy_atlas:ml}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+
+
 
 \end{document}
