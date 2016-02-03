@@ -3,6 +3,8 @@
 *** Structure du modèle standard
 **** Secteur EWK
 **** Secteur QCD
+***** jets
+
 **** Secteur Higgs
 **** Paramétrisation (et mesures)
 ***** Higgs mass
@@ -12,10 +14,9 @@
 ***** Fermi Constant
 ***** Fine structure constant
 *** Particules du MS
-** Validation expérimentale
+** Validation expérimentale (peut sauter)
 *** EWK
 *** QCD
-**** jets
 *** Higgs
 ** Problèmes avec le modèle standard
 **** problème de la hiérarchie
@@ -37,7 +38,7 @@
 **** Particules supersymmétriques
 **** Paramètres du MSSM
 **** Problèmes
-*** Mécanismes de brisure de symmétrie
+*** Mécanismes de brisure de symmétrie (peu sauter)
 **** Concept de secteur caché
 **** mSUGRA/CMSSM
 ***** Explication
@@ -48,11 +49,11 @@
 ***** Paramètres
 ***** Contraintes
 **** Autres
-*** Le MSSM phénoménologique
+*** Le MSSM phénoménologique (peu sauter ou mentionner a la fin de MSSM ou interpertation)
 * Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
 ** Le LHC
 ** Le détecteur ATLAS
-*** Le détecteur interne
+*** Le détecteur interne (privilégier)
 *** Les calorimètres
 *** Le spectromètre à muon
 *** Aquisition des données
@@ -60,11 +61,31 @@
 **** Trigger
 * La reconstruction des quarks top à haute énergie à ATLAS
 ** Les quarks tops à haute impulsion transverse
-** Les méthodes de sous-structure
-*** Échelle de division
+**** Explication top boosté
++ figure (1403.5176 (boosted top - jet strubture)?)
+**** Difficultés de reconstruction
+***** Combinatorial background (c.f boosted SUSY paper)
+***** Collimation -> pas completement résolu (c.f boosted SUSY paper)
+** Les variables de sous-structure
+*** Masse
+**** Masse des top jets plus élevée en moyenne (c.f. ATLAS boosted top 8 TEV)
+*** Échelle de division (peu sauter)
+**** Définition
+**** Incertitudes
 *** N-subjetiness
+**** Définition
+**** Incertitudes
+
 *** Performance
-** Identification par apprentissage machine
+**** Reconstruction de la masse
++ ATLAS boosted top 8 TeV fig. 5f
+**** Taux de vrai/faux positifs
+***** 8 TeV, mass + dij + N-subj
++ ATLAS boosted top 8 TeV fig. 23: mistag rates
+***** 13 TeV, mass + N-subjetiness
++ ATLAS boosted top 13 TeV fig. 5
+
+** Identification par apprentissage machine (changer vers 5)
 *** Introduction à l'apprentissage machine
 **** Définition
 **** Réseaux de neurones
@@ -81,8 +102,7 @@
 ***** significant MET
 ***** high m_eff
 ***** leptons
-**** quark tops boosté dans l'état final
-** Les modèles simplifiés
+**** quark tops boosté dans l'état final (changer vers 4)
 ** Recherche des gluinos se désintégrant en tops
 *** Modèle Gtt
 ***** Description
@@ -100,9 +120,11 @@
 ***** mtb
 **** Régions de signal
 **** Estimation du bruit de fond
-**** Technique statistique
+**** Technique statistique 
++ Lire PGD CLS
 *** Résultats
 **** Nombres d'événements
+***** Pull
 **** limites sur les masses
-** Recherches par apprentissage machine
+** Recherches par apprentissage profond
 
