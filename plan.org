@@ -1,115 +1,104 @@
-* Le modèle standard et ses limitations
-** Survol théorique
-*** Structure du modèle standard
-**** Secteur EWK
-**** Secteur QCD
-***** jets
-
-**** Secteur Higgs
-**** Paramétrisation (et mesures)
+* TODO Le modèle standard et ses limitations
+** TODO Survol théorique
+*** TODO Structure du modèle standard
+**** TODO Secteur EWK
+**** TODO Secteur QCD
+**** TODO Secteur Higgs
+**** TODO Paramétrisation (OPTIONEL) 
 ***** Higgs mass
 ***** Fermion mass and mixing
 ***** Strong coupling constant
 ***** Z mass
 ***** Fermi Constant
 ***** Fine structure constant
-*** Particules du MS
-** Validation expérimentale (peut sauter)
-*** EWK
-*** QCD
-*** Higgs
-** Problèmes avec le modèle standard
-**** problème de la hiérarchie
-**** matière sombre
-**** unification
-* L'extension supersymmétrique du Modèle Standard
-** Introduction à la supersymmétrie
-**** Théorème de Noether
-**** Supersymmétrie
-**** Implications
+*** TODO Particules du MS
+** TODO Validation expérimentale (OPTIONEL)
+*** TODO EWK
+*** TODO QCD
+*** TODO Higgs
+** TODO Problèmes avec le modèle standard
+**** TODO problème de la hiérarchie
+**** TODO matière sombre
+**** TODO unification
+* TODO L'extension supersymmétrique du Modèle Standard
+** TODO Introduction à la supersymmétrie
+**** TODO Théorème de Noether
+**** TODO Supersymmétrie
+**** TODO Implications
 ***** Nouvelles particules
 ***** Symmétrie brisée
-**** Solutions aux problèmes du Modèle Standard
+**** TODO Solutions aux problèmes du Modèle Standard
 ***** problème de la hiérarchie
 ***** matière sombre
 ***** unification
-** Le Modèle Standard Minimalement Supersymmétrique (MSSM)
-*** Description du MSSM
-**** Particules supersymmétriques
-**** Paramètres du MSSM
-**** Problèmes
-*** Mécanismes de brisure de symmétrie (peu sauter)
-**** Concept de secteur caché
-**** mSUGRA/CMSSM
+** TODO Le Modèle Standard Minimalement Supersymmétrique (MSSM)
+*** TODO Description du MSSM
+**** TODO Particules supersymmétriques
+**** TODO Paramètres du MSSM
+**** TODO Problèmes
+*** TODO Mécanismes de brisure de symmétrie (OPTIONNEL)
+**** TODO Concept de secteur caché
+**** TODO mSUGRA/CMSSM
 ***** Explication
 ***** Paramètres
 ***** Contraintes
-**** GMSB
+**** TODO GMSB
 ***** Explication
 ***** Paramètres
 ***** Contraintes
-**** Autres
-*** Le MSSM phénoménologique (peu sauter ou mentionner a la fin de MSSM ou interpertation)
-* Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
-** Le LHC
-** Le détecteur ATLAS
-*** Le détecteur interne (privilégier)
-*** Les calorimètres
-*** Le spectromètre à muon
-*** Aquisition des données
-**** TDAQ
-**** Trigger
-* La reconstruction des quarks top à haute énergie à ATLAS
-** Les quarks tops à haute impulsion transverse
-**** Explication top boosté
+**** TODO Autres
+*** TODO Le MSSM phénoménologique (OPTIONNEL)
+* TODO Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
+** TODO Le LHC
+** TODO Le détecteur ATLAS
+*** TODO Le détecteur interne
+*** TODO Les calorimètres
+*** TODO Le spectromètre à muon
+*** TODO Les déclancheurs
+* TODO La reconstruction des quarks top à haute énergie à ATLAS
+** TODO Les quarks tops à haute impulsion transverse
+**** TODO quark tops boosté dans SUSY
+**** TODO Explication top boosté
 + figure (1403.5176 (boosted top - jet strubture)?)
-**** Difficultés de reconstruction
+**** TODO Difficultés de reconstruction
 ***** Combinatorial background (c.f boosted SUSY paper)
 ***** Collimation -> pas completement résolu (c.f boosted SUSY paper)
-** Les variables de sous-structure
-*** Masse
-**** Masse des top jets plus élevée en moyenne (c.f. ATLAS boosted top 8 TEV)
-*** Échelle de division (peu sauter)
-**** Définition
-**** Incertitudes
-*** N-subjetiness
-**** Définition
-**** Incertitudes
+** TODO Les variables de sous-structure
+*** TODO Masse
+**** TODO Masse des top jets plus élevée en moyenne (c.f. ATLAS boosted top 8 TEV)
+*** TODO Échelle de division (OPTIONEL)
+**** TODO Définition
+**** TODO Incertitudes
+*** TODO N-subjetiness
+**** TODO Définition
+**** TODO Incertitudes
 
-*** Performance
-**** Reconstruction de la masse
+*** TODO Performance
+**** TODO Reconstruction de la masse
 + ATLAS boosted top 8 TeV fig. 5f
-**** Taux de vrai/faux positifs
+**** TODO Taux de vrai/faux positifs
 ***** 8 TeV, mass + dij + N-subj
 + ATLAS boosted top 8 TeV fig. 23: mistag rates
 ***** 13 TeV, mass + N-subjetiness
 + ATLAS boosted top 13 TeV fig. 5
 
-** Identification par apprentissage machine (changer vers 5)
-*** Introduction à l'apprentissage machine
-**** Définition
-**** Réseaux de neurones
-**** Apprentissage profond
-*** Identification des tops
-*** Identification des bosons W par apprentissage profond
-* La recherche de la supersymmétrie à ATLAS
-** Signatures expérimentales
-**** Mécanismes de production
+* TODO La recherche de la supersymmétrie à ATLAS
+** TODO Signatures expérimentales
+**** TODO Mécanismes de production
 ***** collisions gluon-gluon domine
 ***** production: sq-sq, sq-gl, gl-gl
-**** Signatures
+**** TODO Signatures
 ***** high-pt jets
 ***** significant MET
 ***** high m_eff
 ***** leptons
-**** quark tops boosté dans l'état final (changer vers 4)
-** Recherche des gluinos se désintégrant en tops
-*** Modèle Gtt
+** TODO Recherche des gluinos se désintégrant en tops
+*** TODO Modèle Gtt
 ***** Description
 ***** Topologie état final
 ***** Diagramme
-*** Stratégie d'analyse
-**** Variables discriminatoires
+*** TODO Stratégie d'analyse
+**** TODO Variables discriminatoires
 ***** leptons
 ***** jets
 ***** b-jets
@@ -118,13 +107,18 @@
 ***** meff
 ***** mt
 ***** mtb
-**** Régions de signal
-**** Estimation du bruit de fond
-**** Technique statistique 
+**** TODO Régions de signal
+**** TODO Estimation du bruit de fond
+**** TODO Technique statistique 
 + Lire PGD CLS
-*** Résultats
-**** Nombres d'événements
+*** TODO Résultats
+**** TODO Nombres d'événements
 ***** Pull
-**** limites sur les masses
-** Recherches par apprentissage profond
-
+**** TODO limites sur les masses
+** TODO Recherches par apprentissage profond 
+*** TODO Introduction à l'apprentissage machine
+**** TODO Définition
+**** TODO Réseaux de neurones
+**** TODO Apprentissage profond
+*** TODO Sélection d'évènements
+*** TODO Identification des tops/bosons W (OPTIONEL)
