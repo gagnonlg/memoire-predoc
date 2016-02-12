@@ -1,5 +1,6 @@
-* TODO Le modèle standard et ses limitations
-** TODO Survol théorique
+* STARTED Le modèle standard et ses limitations
+** STARTED Survol théorique
+*** TODO Particules du MS
 *** TODO Structure du modèle standard
 **** TODO Secteur EWK
 **** TODO Secteur QCD
@@ -11,7 +12,6 @@
 ***** Z mass
 ***** Fermi Constant
 ***** Fine structure constant
-*** TODO Particules du MS
 ** TODO Validation expérimentale (OPTIONEL)
 *** TODO EWK
 *** TODO QCD
