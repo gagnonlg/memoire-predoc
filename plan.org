@@ -1,7 +1,10 @@
 * STARTED Le modèle standard et ses limitations
-** STARTED Survol théorique
-*** TODO Particules du MS
-*** TODO Structure du modèle standard
+** DONE Survol théorique
+- State "DONE"       from "STARTED"    [2016-02-15 lun 09:59]
+*** DONE Particules du MS
+- State "DONE"       from "TODO"       [2016-02-15 lun 09:59]
+*** DONE Structure du modèle standard
+- State "DONE"       from "TODO"       [2016-02-15 lun 09:59]
 **** TODO Secteur EWK
 **** TODO Secteur QCD
 **** TODO Secteur Higgs
@@ -16,7 +19,7 @@
 *** TODO EWK
 *** TODO QCD
 *** TODO Higgs
-** TODO Problèmes avec le modèle standard
+** STARTED Problèmes avec le modèle standard
 **** TODO problème de la hiérarchie
 **** TODO matière sombre
 **** TODO unification
