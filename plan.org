@@ -1,4 +1,5 @@
-* STARTED Le modèle standard et ses limitations
+* DONE Le modèle standard et ses limitations
+- State "DONE"       from "STARTED"    [2016-02-16 mar 16:31]
 ** DONE Survol théorique
 - State "DONE"       from "STARTED"    [2016-02-15 lun 09:59]
 *** DONE Particules du MS
@@ -19,13 +20,13 @@
 *** TODO EWK
 *** TODO QCD
 *** TODO Higgs
-** STARTED Problèmes avec le modèle standard
+** DONE Problèmes avec le modèle standard
+- State "DONE"       from "STARTED"    [2016-02-16 mar 16:31]
 **** TODO problème de la hiérarchie
 **** TODO matière sombre
 **** TODO unification
-* TODO L'extension supersymmétrique du Modèle Standard
+* STARTED L'extension supersymmétrique du Modèle Standard
 ** TODO Introduction à la supersymmétrie
-**** TODO Théorème de Noether
 **** TODO Supersymmétrie
 **** TODO Implications
 ***** Nouvelles particules
