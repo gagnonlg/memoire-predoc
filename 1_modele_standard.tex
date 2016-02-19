@@ -68,6 +68,20 @@ clair si les neutrinos sont leurs propres anti-particules.
 \label{tab:ms_particules}
 \end{table}
 
+En regardant dans la table~\ref{tab:ms_particules} les masses des
+leptons et des quarks, on observe la structure suivante:
+\begin{eqnarray}
+  m_e < m_\mu < m_\tau \\
+  m_d < m_s < m_b \\
+  m_u < m_c < m_t 
+\end{eqnarray}
+
+On dit donc qu'il y a trois générations de fermions, selon leur
+échelle de masse. On associe aussi une génération à chaque neutrino,
+selon qu'il sont électroniques (première génération), muoniques
+(deuxième génération) ou tauoniques (troisième
+génération)~\cite{thomson_modern_2013}.
+
 \subsection{Structure du Modèle Standard}
 \label{sec:ms:th:struct}
 
@@ -76,6 +90,7 @@ Le Modèle Standard peut être séparé en trois secteurs principaux: le
 secteur électrofaible, le secteur Higgs et le secteur chromodynamique.
 
 \subsubsection{Secteur électrofaible}
+\label{sec:ms:th:struct:ewk}
 
 % EWK
 Les forces faibles et électromagnétiques sont comprises comme étant
@@ -148,7 +163,7 @@ particularité de la théorie.
 \begin{figure}
   \centering
   \includegraphics{alpha_s.pdf}
-  \caption{Sommaire des principales mesures de la constante de couplage forte, $\alpha_s$, à différentes échelles d'énergies ($Q$). Figure tirée de la réf.~\cite{olive_review_2014}.}
+  \caption{Sommaire des principales mesures de la constante de couplage forte, $\alpha_s$, à différentes échelles d'énergies ($Q$). Figure tirée de la réf.~\cite{olive_qcd_2014}.}
 \label{fig:alpha_s}
 \end{figure}
 
@@ -178,7 +193,7 @@ figure~\ref{fig:pdf}.
     \texttt{NNPDF2.3}~\cite{ball_parton_2013}, à deux échelles
     d'énergies ($\mu$) différentes et exprimé en fonction de la
     fraction d'impulsion porté par un parton donné, $x$. Figure tirée de la
-    réf. \cite{olive_review_2014}.}
+    réf. \cite{olive_qcd_2014}.}
   \label{fig:pdf}
 \end{figure}
 
@@ -226,8 +241,12 @@ Le problème de la hiérarchie des masses apparaît lorsqu'on considère
 les corrections d'ordres supérieures à la masse du Higgs. Le Higgs peut
 spontanément émettre une paire fermion-antifermion qui s'annihile
 ensuite pour redonner un Higgs~(voir figure~\ref{fig:hloop}). Ce type de diagramme à boucle a pour
-effet de modifier la masse du Higgs en ajoutant un terme proportionnel
-à $\Lambda_{UV}$~\cite{martin_supersymmetry_1997}.
+effet de modifier la masse du Higgs en ajoutant un terme~\cite{martin_supersymmetry_1997}.:
+
+\begin{eqnarray}
+\label{eq:higgs_fermion_corr}
+\Delta m_H^2 \propto -\Lambda_{UV}^2
+\end{eqnarray}
 
 \begin{figure}
   \centering
@@ -241,11 +260,11 @@ La masse du Higgs a été mesuré en 2012 par les expériences ATLAS et
 CMS et est de
 $125.05 \pm 0.24$~GeV~\cite{atlas_collaboration_combined_2015}. Si
 $\Lambda_{UV} \approx M_P$, alors la correction du diagramme à boucle
-est plusieurs ordres de grandeur au dessus la valeur mesurée et Il
-faut alors soit ajuster une constante de proportionnalité à environ
-$10^{-22}~\%$~\cite{giudice_naturally_20087} (ce qui est fait dans le
-MS) ou remplacer le MS à un échelle $\Lambda_{UV} \ll M_P$ par une
-théorie ayant une symétrie protégeant la masse du
+diverge de plusieurs ordres de grandeur par rapport la valeur mesurée
+et Il faut alors soit ajuster une constante de proportionnalité à
+environ $10^{-22}~\%$~\cite{giudice_naturally_20087} (ce qui est fait
+dans le MS) ou remplacer le MS à un échelle $\Lambda_{UV} \ll M_P$ par
+une théorie ayant une symétrie protégeant la masse du
 Higgs~\cite{martin_supersymmetry_1997}. \\
 
 % Matière sombre
@@ -273,7 +292,7 @@ $M_G$, à laquelle une seule constante, $\alpha_G$, définie la magnitude
 des interactions. Les constantes de couplages à basse énergie doivent pouvoir
 s'exprimer en fonction de $\alpha_G$. Or, une telle unification n'est
 pas possible dans le Modèle Standard, et il faut donc considérer des
-extensions à la théorie pour la réaliser~\cite{olive_review_2014,thomson_modern_2013}.
+extensions à la théorie pour la réaliser~\cite{olive_gut_2014,thomson_modern_2013}.
 
 
 %%% Local Variables:
