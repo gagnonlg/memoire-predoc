@@ -1,6 +1,6 @@
 *.aux
 *.log
-*.pdf
+memoire.pdf
 *.toc
 auto/
 *.bbl
