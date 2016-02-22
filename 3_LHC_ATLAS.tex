@@ -91,21 +91,149 @@ finalement être transféré au LHC~\cite{evans_lhc_2008}.
   \label{fig:lhc_injection}
 \end{figure}
 
-
-
-%% atlas
-%% cms
-%% lhcb
-%% alice
-%% LHCf
-%% totem
-%% moedal
-
 \section{Le détecteur ATLAS}
 \label{sec:lhc_atlas:atlas}
 
+Le détecteur ATLAS (figure~\ref{fig:atlas}), décrit en détail dans la
+référence~\cite{collaboration_atlas_2008}, est un assemblage de quatre
+grand sous-détecteurs. Le détecteur interne, composé de détecteurs
+semi-conducteurs au silicium ainsi que d'un ensemble de tubes à
+dérives, est décrit dans la
+section~\ref{sec:lhc_atlas:atlas:indet}. Les calorimètres
+électromagnétiques et hadroniques sont traités dans la
+section~\ref{sec:lhc_atlas:atlas:calo}, le spectromètre à muons dans
+la section~\ref{sec:lhc_atlas:atlas:mu} et finalement le système
+d'aquisition des données est décrit dans la
+section~\ref{sec:lhc_atlas:atlas:daq}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{atlas.pdf}
+  \caption{Le détecteur ATLAS. Figure tirée de la référence~\cite{collaboration_atlas_2008}.}
+  \label{fig:atlas}
+\end{figure}
+
+\subsection{Préambule: système d'unités}
+\label{sec:units}
+
+Le système d'unité courrament utilisé pour décrire le détecteur ATLAS
+et les intéractions qui s'y produise a son origin au point
+d'intéraction. L'axe $z$ est dans la direction du faisceau, l'axe $x$
+pointe vers le centre de l'anneau formé par le tunnel du LHC et l'axe
+$y$ est orienté vers le haut. Le plan $x-y$ défini la direction
+transverse, dans laquelle plusieurs quantité sont calculées. L'angle
+dans ce plan, donc autour de l'axe $z$, est noté $\phi$.
+
+Il est possible d'associer une \emph{rapidité}
+$y = \frac{1}{2}ln((E + p_Z)/(E - p_Z))$, définissant une coordonnée
+invariante selon le référentiel. Il est commun d.utiliser une
+paramétrisation de cette quantité, la \emph{pseudo-rapidité}, définie
+en fonction de l'angle polaire $\theta$ (mesuré à partir de
+l'axe~$z$), $\eta = -ln(tan(\theta/2))$. Les directions dans le plan
+$y-z$ définies par quelques valeurs de $\eta$ sont montrés dans la
+figure~\ref{fig:eta}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{eta.png}
+  \caption{Directions définies par quelques valeurs de $\eta$ dans le plan $y-z$.}
+  \label{fig:eta}
+\end{figure}
+
+La distance entre différents objets est souvent défini dans l'espace
+$\eta-\phi$: $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$.
+
+
 \subsection{Le détecteur interne}
 \label{sec:lhc_atlas:atlas:indet}
+
+% Critères
+
+\subsubsection{PIXEL}
+
+Le détecteur PIXEL est la composante d'ATLAS la plus près du
+faisceau. Il s'agit de trois assemblages cylindriques coaxiaux de
+senseurs en silicium segmentés en pixels. Le PIXEL permet donc
+d'obtenir la distribution en deux dimensions des dépots de charges
+engendrés par les particules chargés traversant le détecteur.
+
+À cause des haut taux de productions de particules produites lors de
+l'opération du LHC à luminosité maximale, le PIXEL doit être
+exceptionellement résistant à la radiation ionisante qui pourrait
+dégrader sa performance. Il doit aussi avoir une résolution
+exceptionelle, même à haut taux d'occupation, pour permettre une
+performance optimale lors du retraçage~\footnote{De l'anglais,
+  \emph{tracking}}. Ces besoins particuliers motivent l'utilisation
+d'une technologie innovatrice peu conventionelle: à partir d'une
+brique de silicium de type $n$, on applique un implant $p^+$ d'un côté
+et implant $n^+$ de l'autre. Ce choix particulier permet aux senseurs
+d'opérer correctement même longtemps après que les dépots de charges
+dans le silicium aient occasioné une inversion de type (TODO
+développer). De plus, le silicium utilisé est fortement oxygéné, ce qui permet
+de diminuer les dépots de charges.
+
+Souvent, le passage d'une particule chargée à travers un senseur du
+PIXEL illumine plus d'un pixel. Ce phénomène est due, entre autre, à
+la dérive des électrons dans au champ magnétique axial du détecteur
+interne, aux rayons-$\delta$ (électrons éjectés de leurs sites) et au
+fait que deux particules peuvent passer simultanément très près les
+unes des autres à haute luminosité. Cette dernière cause peut avoir un
+effet dramatique sur la précision de l'estimation de position des
+particules et arrive fréquemment dans les gerbes hadroniques de très
+hautes énergies. Pour mitiger ce problème, un algorithme utilisant des
+réseaux de neuronnes est utilisé pour estimer le nombre de particule
+dans chaque groupe de pixels contigues ainsi que leurs
+positions~\cite{collaboration_neural_2014}, permettant de quasiment
+retrouver la résolution de conception optimale, soit $10~\mu$m dans la direction $x$ locale ($R-\phi$ globale)
+et $115~\mu$m dans la direction $y$ locale ($z$ globale), comme le montre la figure~\ref{fig:pixel_acc}.
+
+\begin{figure}
+  \centering
+  \includegraphics{pixel_acc.pdf}
+  \caption{Résolution de la position des particules passant à travers
+    le détecteur pixel en fonction du nombre de pixel contigues
+    illuminés, dans les directions $x$ locales ($R-\phi$ globales) (à
+    gauche) et $y$ locales ($z$ globale) (à droite), selon que
+    l'agorithme de réseaux de neurones est utilisé ou non. Figure
+    tirée de la référence~\cite{collaboration_neural_2014}}
+  \label{fig:pixel_acc}
+\end{figure}
+
+%% IBL
+Outre les grandes doses de radiations ionisantes absorbées par les
+trois couches du PIXEL, des déficiences importantes dans
+l'électronique des senseurs peuvent apparaitre éventuellement et sont
+très difficile, voir impossible, à réparer. Lorsque de tels dommages
+affectent la couche la plus près du points d'intéraction, la
+\emph{couche-B} situé à $\approx 50$~mm du centre, la performance du
+retraçage peut être sérieusement dégradés. Au moment de la
+construction du détecteur, il n'y avait cependant pas assez de place
+entre la couche-$B$ et le tuyau de la ligne de faisceau pour y
+installer une couche additionelle. Or, Or, une contrainte importante
+dans le choix de ce rayon est l'instabilité du plancher de la caverne
+ATLAS, qui avait été estimé à environ 5~mm. Or, des mesures effectués
+entre 2003 et 2007 on démontré que cette instabilité est plutôt de
+l'ordre de 1~mm, ce qui permettrait de réduire la ligne de faisceau de
+4~mm, donnant alors assez de jeu pour pouvoir installer une couche
+additionelle~\cite{capeans_atlas_2010}. C'est précisément ce qui a été
+fait en 2014, lors de la première grande mise-à-niveau du détecteur,
+avec l'installation du \emph{IBL} (\emph{Insertable B-Layer}) (voir
+figure~\ref{fig:ibl}). Avec cette couche additionelle, l'estimation de
+la position du sommet d'intéraction est grandement améliorée.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics{ibl.jpg}
+  \caption{Image de l'installation du IBL en 2014. Figure tirée de la référence~\cite{MarcelloniDeOliveira:1702006}}
+  \label{fig:ibl}
+\end{figure}
+
+
+
+% SCT
+% TRT
+%% electron ID
+% Tracking
 
 \subsection{Les calorimètres}
 \label{sec:lhc_atlas:atlas:calo}
