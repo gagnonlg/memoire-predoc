@@ -228,11 +228,100 @@ la position du sommet d'intéraction est grandement améliorée.
   \label{fig:ibl}
 \end{figure}
 
-
-
 % SCT
+\subsubsection{SCT}
+
+Au dessus du pixel se trouve le \emph{SemiConductor Tracker} (TODO?),
+ou SCT, un ensemble de 4 assemblages cylindriques de plusieurs
+senseurs à micro-bandes de silicium. À la différence d'un senseur à
+pixel, les senseurs sont implantés en bandes parallèles sur la plaque
+de silicium, et donc chaque module fourni une mesure de position dans
+une seule direction. Pour obtenir de l'information dans les deux
+directions ($z$ et $R-\phi$), les modules sont installés en paires
+séparés par un angle de 40~mrad, comme le montre la
+figure~\ref{fig:sct}, définissant une grille en 2 dimensions.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{sct.pdf}
+  \caption{Photographie d'un module du SCT (à droite) et schéma
+    correspondant (gauche). On y voit l'angle relatif entre les deux
+    plaques de silicium. Figure tirée de la
+    référence~\cite{collaboration_atlas_2008}}
+  \label{fig:sct}
+\end{figure}
+
+La précision des mesures du SCT est de 17~$\mu$m dans la direction
+$R-\phi$ et de 580~$\mu$m dans la direction $z$. Ces mesures sont
+moins précises que celles du PIXEL, mais le SCT fourni quatre mesures
+additionelles de position à relativement bonne précision et à moindre
+coût que le PIXEL, représentant un bon compromis pour améliorer la
+performance du retraçage.
+
+
 % TRT
+
+\subsubsection{TRT}
+
+Le détecteur interne est complété par le \emph{Transition Radiation
+  Tracker}, ou TRT, un ensemble de tubes à dérives. Les tubes de 4~mm de diamètres (TODO pas rayon?) en
+polyimide sont recouvert à l'intérieur d'une couche d'aluminium,
+définissant ainsi la cathode. Au centre se trouve un fil de tungsten
+plaqué avec de l'or, définissant l'anode. Une différence de potientiel
+de $\approx -1500$~V est appliquée entre l'anode et la cathode. Les tube
+sont remplis d'un mélange de xénon (70\%), de CO$_2$ (27\%) et d'O$_2$
+(3\%). Le TRT est divisé en trois sections: une section centrale
+cylindrique avec des tubes parallèles au faisceau séparés en deux au
+centre et deux disques aux extrémités avec des tubes dans la direction
+radiale.
+
+Lorsqu'une particule chargée Passe à travers un tube, elle ionise le
+mélange gaseux et amorce une cascade d'électrons et d'ions qui
+dérivent vers l'anode et la cathode, créant ainsi un signal. La forme
+du signal est analysée pour mesurer le temps de dérive de la cascade
+qui, avec une calibration approriée (voir figure~\ref{fig:trt}),
+permet de mesurer la distance entre la particule et l'anode. La
+position de l'anode étant précisément connue, cela permet donc de
+mesurer une position en $R-\phi$ avec une précision de 130~$\mu$m.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{trt.pdf}
+  \caption{Relation entre le temps de dérive et la distance par
+    rapport à l'anode dans le TRT. Figure tirée de la
+    référence~\cite{ATLAS-CONF-2011-006}}
+  \label{fig:trt}
+\end{figure}
+
 %% electron ID
+Lorsqu'une particule chargée traverse l'interface entre deux milieux
+ayant des constantes diélectriques différentes, ce qui peut engendrer
+de la radiation de transition sous forme de photons. Cet effet est
+exploité dans le TRT pour identifier les électrons: les électrons
+produisent des photons en entrant dans un des tube, les photons
+interagissent avec le gaz pour créer une cascade d'électron dont la
+charge totale est au-dessus de celle directement engendré par
+l'électron. Deux seuils sont alors défini: un seuil bas, pour séparer
+les signaux d'ionisation directe du bruit et un seuil haut, pour
+reconnaitre les signaux venant de radiation de transition et optimisé
+pour reconnaitre les électrons parmis des pions chargés.
+
+\subsubsection{Retraçage}
+
+Les trois sous-systèmes du détecteur interne servent à permettre de
+retracer précisément le passage de particules chargés à travers le
+détecteur pour mesurer la position du sommet d'intéraction et
+l'impulsion des particules. Le détecteur interne étant plongé dans un
+champ magnétique axial de 2~T, les particules chargés produites lors
+de collisions suivent une trajectoire hélicoïdale dont le rayon est
+proportionel à l'impulsion. L'erreur sur l'estimation de l'impulsion
+dépend à la fois de la précision des mesures individuelles de
+positions, de leurs nombres ainsi que de la longueur totale de la
+trace~\cite{olive_detectors_2014}. Ainsi, le détecteur PIXEL donne
+trois mesures très précises, le SCT en rajoute 4 avec un peu moins de
+précision. Le TRT est beaucoup moins précis que les deux autres mais
+rajoute environ 36 mesures par trace.
+
 % Tracking
 
 \subsection{Les calorimètres}
