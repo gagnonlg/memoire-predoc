@@ -231,7 +231,7 @@ la position du sommet d'intéraction est grandement améliorée.
 % SCT
 \subsubsection{SCT}
 
-Au dessus du pixel se trouve le \emph{SemiConductor Tracker} (TODO?),
+Au dessus du pixel se trouve le \emph{Semiconductor Tracker},
 ou SCT, un ensemble de 4 assemblages cylindriques de plusieurs
 senseurs à micro-bandes de silicium. À la différence d'un senseur à
 pixel, les senseurs sont implantés en bandes parallèles sur la plaque
@@ -264,16 +264,16 @@ performance du retraçage.
 \subsubsection{TRT}
 
 Le détecteur interne est complété par le \emph{Transition Radiation
-  Tracker}, ou TRT, un ensemble de tubes à dérives. Les tubes de 4~mm de diamètres (TODO pas rayon?) en
-polyimide sont recouvert à l'intérieur d'une couche d'aluminium,
-définissant ainsi la cathode. Au centre se trouve un fil de tungsten
-plaqué avec de l'or, définissant l'anode. Une différence de potientiel
-de $\approx -1500$~V est appliquée entre l'anode et la cathode. Les tube
-sont remplis d'un mélange de xénon (70\%), de CO$_2$ (27\%) et d'O$_2$
-(3\%). Le TRT est divisé en trois sections: une section centrale
-cylindrique avec des tubes parallèles au faisceau séparés en deux au
-centre et deux disques aux extrémités avec des tubes dans la direction
-radiale.
+  Tracker}, ou TRT, un ensemble de tubes à dérives. Les tubes de 4~mm
+de diamètres en polyimide sont recouvert à l'intérieur d'une couche
+d'aluminium, définissant ainsi la cathode. Au centre se trouve un fil
+de tungsten plaqué avec de l'or, définissant l'anode. Une différence
+de potientiel de $\approx -1500$~V est appliquée entre l'anode et la
+cathode. Les tube sont remplis d'un mélange de xénon (70\%), de CO$_2$
+(27\%) et d'O$_2$ (3\%). Le TRT est divisé en trois sections: une
+section centrale cylindrique avec des tubes parallèles au faisceau
+séparés en deux au centre et deux disques aux extrémités avec des
+tubes dans la direction radiale.
 
 Lorsqu'une particule chargée Passe à travers un tube, elle ionise le
 mélange gaseux et amorce une cascade d'électrons et d'ions qui
@@ -322,16 +322,91 @@ trois mesures très précises, le SCT en rajoute 4 avec un peu moins de
 précision. Le TRT est beaucoup moins précis que les deux autres mais
 rajoute environ 36 mesures par trace.
 
-% Tracking
-
 \subsection{Les calorimètres}
 \label{sec:lhc_atlas:atlas:calo}
+
+Au-dessus du détecteur interne se trouvent les calorimètres
+électromagnétiques et hadroniques d'ATLAS. Comme les sous-systèmes du
+détecteur interne, ils sont chacun séparés en une partie centrale
+cylindrique ainsi que deux disques à grand $|\eta|$. \\
+
+Le calorimètre électromagnétique est un calorimètre à échantillonage
+avec absorbeurs en plomb et couches actives en argon liquide. Les
+couches actives sont en formes d'accordéon pour avoir une couverture
+sans interruption en $\phi$. 
+
+Un détecteur constitué d'un couche
+d'argon liquide d'une profondeur de 1.1~cm dans la partie centrale et
+de 0.5~cm aux extrémités est installé devant le calorimètre
+électromagnétique et sert à mitiger les pertes d'énergies encourus par
+les particules chargés avant d'atteindre le
+calorimètre~\cite{andrieux_construction_2002}. \\
+
+Directement au-dessus de la partie centrale du calorimètre
+électromagnétique se trouve le calorimètre hadronique à tuile,
+constitués d'absorbeurs en acier et utilisant des scintillateurs pour
+échantilloner l'énergie. Aux extrémités se trouvent deux calorimètres
+cuivre-argon~ligquide servant à la calorimétrie hadronique à grand
+$|\eta|$ ($1.5 < |\eta| < 3.1$). Dans lerégion $3.1 < |\eta| < 4.9$ se
+trouve un autre calorimètre, le \emph{FCal}~\footnote{De l'anglais,
+  \emph{Forward Calorimeter.}}. Les couches actives sont en argons
+liquide et les couches passives en cuivre (première section, optimisée
+pour calorimétrie électromagnétiques) ou en tungsten (deux sections
+suivantes, optimisées pour calorimétrie hadronique).
 
 \subsection{Le spectromètre à muon}
 \label{sec:lhc_atlas:atlas:mu}
 
-\subsection{Aquisition des données}
+Les particules chargées perdent de l'énergie en intéragissant avec le
+milieu selon l'équation de Bethe-Bloch, montrée dans la figure~\ref{fig:bethe-bloch}. Il
+existe un régime, $1 \le\beta\gamma\le 10$ (approximativement), pour
+lequel la perte d'énergie est à un minimum. Une particule dans ce
+régime est à son minimum d'ionisation. Il se trouve que la grande
+majorité des muons produits dans les collisions au LHC sont près du
+minimum d'ionisation et donc traversent les calorimètres sans être
+arrêtés, ce qui motive l'installation de détecteurs dédiés aux muons
+au-delà des calorimètres, permettant d'améliorer substantiellement
+l'identification et la précision des mesures d'impulsions des muons.
+
+\begin{figure}
+  \centering
+  \includegraphics{bethe_bloch.jpg}
+  \caption{Équation de Bethe-Bloch, qui exprime la perte d'énergie
+    d'une particule chargée en fonction de sa vitesse dans différents
+    milieux. Figure tirée de la référence~\cite{thomson_modern_2013}}
+  \label{fig:bethe-bloch}
+\end{figure}
+
+Le détecteur ATLAS est complété par l'ajout de trois aimants toroïdaux
+(un aimant central, deux aux extrémités derrirère les calorimètres) et
+par des ensembles de chambres à muons . Dans la partie centrale, les
+chambres sont disposés en-dessous, à l'intérieur et au-dessus de
+l'aiment toroïdal central. Aux extrémités se trouvent de grands
+disques comme montré dans la figure~\ref{fig:atlas}.
+
+\subsection{Déclancheurs}
 \label{sec:lhc_atlas:atlas:daq}
+
+À luminosité maximale il y a à peu près 1 milliard de collisions par
+secondes ce qui correspond à une fréquence de 1~GHz. L'enregistrement
+sur disque des données prises par le détecteur ATLAS nécéssitant
+environ 1.3~Mb par événement, un stockage complet corresponderais à
+plus de 1000~Tb/s de données enregistrés, ce qui est beaucoup trop
+élevé pour être possible. De plus, seulement une petite fraction de
+ces événements correspondent aux processus de nouvelle physique
+recherchés par la collaboration. Le détecteur ATLAS est donc doté d'un
+système de déclancheurs~\footnote{De l'anglais, \emph{triggers}}
+permettant de limiter la fréquence d'enregistrement à 200~Hz. Il y a
+deux paliers de déclancheurs: un niveau matériel et un niveau
+logiciel. Le premier niveau est un ensemble de dispositifs installés
+directement sur le détecteur et qui sont activés par plusieurs
+signaux, tels que le passage de particules à haute impulsion
+transverse dans différentes zones du détecteur ou encore un grand
+déficit d'impulsion transverse dans une direction (calculée par
+conservation de l'impulsion). Ce premier niveau défini des zones
+d'intérêts en $\eta-\phi$ qui sont ensuite relayé à un ensemble de
+serveurs sur lesquels des logiciels analysent les zones d'intérêts
+pour déterminer si l'événement est intéressant ou non~\cite{collaboration_atlas_2008}.
 
 %%% Local Variables:
 %%% mode: latex
