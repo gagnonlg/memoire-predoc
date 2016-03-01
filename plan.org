@@ -25,7 +25,8 @@
 **** TODO problème de la hiérarchie
 **** TODO matière sombre
 **** TODO unification
-* STARTED L'extension supersymmétrique du Modèle Standard
+* DONE L'extension supersymmétrique du Modèle Standard
+- State "DONE"       from "STARTED"    [2016-03-01 mar 13:04]
 ** TODO Introduction à la supersymmétrie
 **** TODO Supersymmétrie
 **** TODO Implications
@@ -52,14 +53,16 @@
 ***** Contraintes
 **** TODO Autres
 *** TODO Le MSSM phénoménologique (OPTIONNEL)
-* TODO Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
+* DONE Le Grand Collisionneur de Hadrons (LHC) et le détecteur ATLAS
+- State "DONE"       from "TODO"       [2016-03-01 mar 13:04]
 ** TODO Le LHC
 ** TODO Le détecteur ATLAS
 *** TODO Le détecteur interne
 *** TODO Les calorimètres
 *** TODO Le spectromètre à muon
 *** TODO Les déclancheurs
-* TODO La reconstruction des quarks top à haute énergie à ATLAS
+* DONE La reconstruction des quarks top à haute énergie à ATLAS
+- State "DONE"       from "STARTED"    [2016-03-01 mar 17:12]
 ** TODO Les quarks tops à haute impulsion transverse
 **** TODO quark tops boosté dans SUSY
 **** TODO Explication top boosté
