@@ -1,0 +1,22 @@
+Silicium dopé n: excès de donneurs de charges
+
+Défaut créés par la radiation incidente:
+       + Réduit le nombre de doneurs
+       + crée des sites accepteurs
+
+L'excès de donneurs diminue jusqu'à inversion: excès de sites
+accepteurs -> type p
+
+SCT moins affecté donc design traditionel, implants p sur «bulk» de type n
+
+PIXEL potentiellement très affecté, donc éventuellement on aurait un
+implant de type p sur un bulk de type p, et il faudrait un voltage
+énorme pour arriver à dépletion maximale
+
+Design innovateur: bulk de type n, implant p+ d'un bord et n+ de l'autre
+
+|p|n|n+| --inversion--> |p|p|n+|
+
+Les pixels sont du côté n+, donc en théorie le détecteur peut être
+opéré sous le voltage de dépletion après inversion de type en
+conservant une isolation totale des pixels.
