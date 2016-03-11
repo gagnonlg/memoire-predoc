@@ -89,7 +89,7 @@
 ***** 13 TeV, mass + N-subjetiness
 + ATLAS boosted top 13 TeV fig. 5
 
-* TODO La recherche de la supersymmétrie à ATLAS
+* STARTED La recherche de la supersymmétrie à ATLAS
 ** TODO Signatures expérimentales
 **** TODO Mécanismes de production
 ***** collisions gluon-gluon domine

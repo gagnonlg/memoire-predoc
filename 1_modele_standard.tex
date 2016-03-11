@@ -1,86 +1,101 @@
 \chapter{Le Modèle Standard et ses limitations}
 \label{sec:ms}
 
-Le Modèle Standard (MS) est une théorie des interactions fondamentales
-décrivant la nature avec un niveaux de précision impressionnant.
-La structure théorique du modèle est présentée dans la
+Le Modèle Standard est une théorie des interactions fondamentales
+décrivant la nature avec un niveaux de précision impressionnant.  La
+structure théorique du modèle est présentée dans la
 section~\ref{sec:ms:th}, basée en majeure partie sur les références
-\cite{olive_review_2014} et~\cite{thomson_modern_2013}. Quelques grand
-problèmes non résolus dans le MS sont exposés dans la
-section~\ref{sec:ms:problemes}.
+\cite{olive_ewk_2014}, \cite{olive_qcd_2014}
+et~\cite{thomson_modern_2013}. Quelques grand problèmes non résolus
+sont ensuite exposés dans la section~\ref{sec:ms:problemes}.
 
 \section{Survol théorique}
 \label{sec:ms:th}
 
-Concrètement, le Modèle Standard décrit les particules fondamentales
-de la nature ainsi que les forces par lesquelles elles
-interagissent. Formellement, les particules
-(section~\ref{sec:ms:th:particules}) sont vues comme étant des
-excitations localisées de de différents champs dont les interactions
-sont décrites par les différents secteurs du Lagrangien du MS
-(section~\ref{sec:ms:th:struct}).
+Le Modèle Standard décrit les particules fondamentales de la nature
+ainsi que les forces par lesquelles elles interagissent. Formellement,
+les particules (section~\ref{sec:ms:th:particules}) sont vues comme
+étant des excitations localisées de de différents champs dont les
+interactions sont décrites par les différents secteurs
+du modèle (section~\ref{sec:ms:th:struct}).
 
 \subsection{Les particules du Modèle Standard}
 \label{sec:ms:th:particules}
 
-On dénote d'abord deux grands types de particles, défini par la nature
+Il existe deux grands types de particles, défini par la nature
 de leur spin. Les particles ayant spin entier sont appelés
 \emph{bosons}, tandis que les particules avec spin demi-entier sont
 appelés \emph{fermions}. Les fermions sont ensuite séparés en deux
 sous-classes, selon leur couleur~\footnote{l'analogue chromodynamique
   de la charge électrique}: les fermions non-colorées sont appelées
-\emph{leptons} et ceux ayant une couleur, les \emph{quarks}. Les
-propriétés des différentes particules du MS sont résumées dans la
-table~\ref{tab:ms_particules}.
+\emph{leptons} et ceux ayant une couleur, les \emph{quarks}. 
 
-Une des caractéristiques frappantes du Modèle Standard est qu'il existe
-une \emph{anti-particule} associée à chaque particule. Si la particule
-est chargée, son anti-particule a la charge opposée. Le gluon, le
-photon et le Z sont leurs propres anti-particules. Il n'est pas encore
-clair si les neutrinos sont leurs propres anti-particules.
+Le modèle standard compte six leptons. L'électron ($e^-$), le muon
+($\mu^-$) et le tau ($\tau^-$) sont chargés négativement, tandis que
+les trois neutrinos ($\nu_e$, $\nu_\mu$ et $\nu_\tau$) sont
+électriquement neutres. Il y a aussi six quarks, portant tous une
+charge fractionaire. le \emph{down} ($d$), le \emph{strange} ($s$) et
+le \emph{bottom} ($b$) ont une charge de $-\frac{1}{3}$ alors que le
+\emph{up}, le \emph{charm} ($c$) et le \emph{top} ($t$) ont une charge
+de $\frac{2}{3}$.
 
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|c|c|c|c|c|c|}
-  \hline
-  symbole   & nom                 & spin & charge & coloré & Masse \\ \hline
-  $\gamma$/$A_\mu$  & photon              & 1    & 0     & non    & 0    \\ \hline
-  $g$       & gluon               & 1    & 0     & oui    &  0   \\ \hline
-  $Z$       & boson Z             & 1    & 0     & non    & 91.1876 $\pm$ 0.0021 GeV \cite{olive_review_2014} \\ \hline
-  $W^-$     & bosons W            & 1    & -1    & non    & 80.385 $\pm$ 0.015 GeV \cite{olive_review_2014} \\ \hline
-  $h$       & Higgs               & 0    & 0     & non    & 125.09 $\pm$ 0.21 $\pm$ 0.11 GeV \cite{atlas_collaboration_combined_2015}  \\ \hline
-  $e^-$     & électron          & 1/2  & -1    & non    & 0.510998928 $\pm$ 0.000000011 \cite{mohr_codata_2012} \\ \hline
-  $\mu^-$   & muon                & 1/2  & -1    & non    & 105.6583715 $\pm$ 0.0000035 MeV \cite{mohr_codata_2012}    \\ \hline
-  $\tau^-$  & tau                 & 1/2  & -1    & non    & 1.77686 $\pm$ 0.00012 GeV \cite{olive_review_2014}    \\ \hline
-  $\nu_e$   & électron-neutrino & 1/2  & 0     & non    & $\bar{\nu}$: < 2 eV \cite{olive_review_2014} / $\nu$: < 460 eV \cite{yasumi_mass_1994} \\ \hline
-  $\nu_\mu$ & muon-neutrino       & 1/2  & 0     & non    & < 0.19 MeV \cite{olive_review_2014}    \\ \hline
-  $\nu_\tau$ & tau-neutrino       & 1/2  & 0     & non    &  < 18.2 MeV \cite{al_upper_1998}   \\ \hline
-  $d$       & quark down          & 1/2  & -1/3  & oui    & 4.8 + 0.5 - 0.3 MeV \cite{olive_review_2014}     \\ \hline
-  $u$       & quark up            & 1/2  & 2/3   & oui    & 2.3 + 0.7 - 0.5 MeV \cite{olive_review_2014}    \\ \hline
-  $s$       & quark strange       & 1/2  & -1/3  & oui    & 95 $\pm$ 5 MeV \cite{olive_review_2014}    \\ \hline
-  $c$       & quark charm         & 1/2  & 2/3   & oui    & 1.275 $\pm$ 0.025 GeV \cite{olive_review_2014}    \\ \hline
-  $b$       & quark bottom        & 1/2  & -1/3  & oui    & 4.18 $\pm$ 0.03 GeV \cite{olive_review_2014}    \\ \hline
-  $t$       & quark top           & 1/2  & 2/3   & oui    & 173.21 $\pm$ 0.51 $\pm$ 0.71 GeV \cite{olive_review_2014}    \\ \hline
-\end{tabular}
-\caption{Les particules du Modèle Standard et leurs propriétés. Chaque particule a une anti-particule associée,
-  ayant une charge électrique inverse. Le gluon, le photon, le Z et potentiellement les neutrinos sont leurs
-  propres anti-particules. }
-\label{tab:ms_particules}
-\end{table}
-
-En regardant dans la table~\ref{tab:ms_particules} les masses des
-leptons et des quarks, on observe la structure suivante:
+Les masses des
+leptons et des quarks sont ordonnées de la façon suivante:
 \begin{eqnarray}
-  m_e < m_\mu < m_\tau \\
+  m_e < m_\mu < m_\tau \nonumber \\
   m_d < m_s < m_b \\
-  m_u < m_c < m_t 
+  m_u < m_c < m_t \nonumber 
 \end{eqnarray}
 
 On dit donc qu'il y a trois générations de fermions, selon leur
 échelle de masse. On associe aussi une génération à chaque neutrino,
 selon qu'il sont électroniques (première génération), muoniques
-(deuxième génération) ou tauoniques (troisième
-génération)~\cite{thomson_modern_2013}.
+(deuxième génération) ou tauoniques (troisième génération).
+
+% Les
+% propriétés des différentes particules du MS sont résumées dans la
+% table~\ref{tab:ms_particules}.
+
+En addition aux fermions, il y a cinq bosons. Le photon ($\gamma$),
+neutre et sans masse, le $Z$, neutre et massif, le $W$, chargé et
+massif ainsi que le gluon ($g$), neutre, sans masse et coloré ont tous
+un spin de 1 (bosons vectoriels) tandis que le boson de Higgs ($h$),
+neutre et massif, a un spin nul (boson scalaire).
+
+Une des caractéristiques frappantes du Modèle Standard est qu'il existe
+une \emph{anti-particule} associée à chaque particule. Si la particule
+est chargée, son anti-particule a la charge opposée. Le gluon, le
+photon et le Z sont leurs propres anti-particules.
+
+% \begin{table}[h!]
+%   \centering
+%   \begin{tabular}{|c|c|c|c|c|c|}
+%   \hline
+%   symbole   & nom                 & spin & charge & coloré & Masse \\ \hline
+%   $\gamma$/$A_\mu$  & photon              & 1    & 0     & non    & 0    \\ \hline
+%   $g$       & gluon               & 1    & 0     & oui    &  0   \\ \hline
+%   $Z$       & boson Z             & 1    & 0     & non    & 91.1876 $\pm$ 0.0021 GeV \cite{olive_review_2014} \\ \hline
+%   $W^-$     & bosons W            & 1    & -1    & non    & 80.385 $\pm$ 0.015 GeV \cite{olive_review_2014} \\ \hline
+%   $h$       & Higgs               & 0    & 0     & non    & 125.09 $\pm$ 0.21 $\pm$ 0.11 GeV \cite{atlas_collaboration_combined_2015}  \\ \hline
+%   $e^-$     & électron          & 1/2  & -1    & non    & 0.510998928 $\pm$ 0.000000011 \cite{mohr_codata_2012} \\ \hline
+%   $\mu^-$   & muon                & 1/2  & -1    & non    & 105.6583715 $\pm$ 0.0000035 MeV \cite{mohr_codata_2012}    \\ \hline
+%   $\tau^-$  & tau                 & 1/2  & -1    & non    & 1.77686 $\pm$ 0.00012 GeV \cite{olive_review_2014}    \\ \hline
+%   $\nu_e$   & électron-neutrino & 1/2  & 0     & non    & $\bar{\nu}$: < 2 eV \cite{olive_review_2014} / $\nu$: < 460 eV \cite{yasumi_mass_1994} \\ \hline
+%   $\nu_\mu$ & muon-neutrino       & 1/2  & 0     & non    & < 0.19 MeV \cite{olive_review_2014}    \\ \hline
+%   $\nu_\tau$ & tau-neutrino       & 1/2  & 0     & non    &  < 18.2 MeV \cite{al_upper_1998}   \\ \hline
+%   $d$       & quark down          & 1/2  & -1/3  & oui    & 4.8 + 0.5 - 0.3 MeV \cite{olive_review_2014}     \\ \hline
+%   $u$       & quark up            & 1/2  & 2/3   & oui    & 2.3 + 0.7 - 0.5 MeV \cite{olive_review_2014}    \\ \hline
+%   $s$       & quark strange       & 1/2  & -1/3  & oui    & 95 $\pm$ 5 MeV \cite{olive_review_2014}    \\ \hline
+%   $c$       & quark charm         & 1/2  & 2/3   & oui    & 1.275 $\pm$ 0.025 GeV \cite{olive_review_2014}    \\ \hline
+%   $b$       & quark bottom        & 1/2  & -1/3  & oui    & 4.18 $\pm$ 0.03 GeV \cite{olive_review_2014}    \\ \hline
+%   $t$       & quark top           & 1/2  & 2/3   & oui    & 173.21 $\pm$ 0.51 $\pm$ 0.71 GeV \cite{olive_review_2014}    \\ \hline
+% \end{tabular}
+% \caption{Les particules du Modèle Standard et leurs propriétés. Chaque particule a une anti-particule associée,
+%   ayant une charge électrique inverse. Le gluon, le photon, le Z et potentiellement les neutrinos sont leurs
+%   propres anti-particules. }
+% \label{tab:ms_particules}
+% \end{table}
+
 
 \subsection{Structure du Modèle Standard}
 \label{sec:ms:th:struct}
@@ -95,70 +110,74 @@ secteur électrofaible, le secteur Higgs et le secteur chromodynamique.
 % EWK
 Les forces faibles et électromagnétiques sont comprises comme étant
 deux aspects d'une seule et même force, la force électrofaible, depuis
-les travaux de Glashow, Salam et Weinberg dans les années
-1960. Le modèle électrofaible prédit
-l'existence de quatre champs de jauge: $W^{(1)}_\mu$, $W^{(2)}_\mu$,
-$W^{(3)}_\mu$ et $B_\mu$. La théorie prédit deux nombres quantiques
-pour chacun de ces bosons: l'isopsin faible, $I^{(3)}_W$, et
-l'hypercharge, $Y$. Les bosons W et Z, ainsi que le photon, sont des
-combinaisons linéaires de ces bosons:
-\begin{eqnarray}
-  \label{eq:ewk_mix}
-  W^{\pm}_\mu = \frac{1}{\sqrt{2}}(W^{(1)}_\mu \mp W^{(2)}_\mu)  \\
-  Z_\mu = -B_\mu\ sin\ \theta_W + W^{(3)}_\mu cos\ \theta_W \\
-  A_\mu = B_\mu\ cos\ \theta_W + W^{(3)}_\mu sin\ \theta_W
-\end{eqnarray}
-L'angle de mélange électrofaible, $\theta_W$, est un paramètre du
-modèle. Les nombres quantiques $I^{(3)}_W$ et $Y$ déterminent la
-charge électrique à travers la relation
-\begin{eqnarray}
-  Q = \frac{Y}{2} + I^{(3)}_W
-\end{eqnarray}
+les travaux de Glashow, Salam et Weinberg dans les années 1960. Le
+modèle électrofaible prédit l'existence de quatre champs de jauge:
+$W^{(1)}_\mu$, $W^{(2)}_\mu$, $W^{(3)}_\mu$ et $B_\mu$. La théorie
+prédit deux nombres quantiques pour chacun de ces bosons: l'isopsin
+faible, $I^{(3)}_W$, et l'hypercharge, $Y$. Les bosons W et Z, ainsi
+que le photon, sont des combinaisons linéaires de ces états et la
+charge électrique est une combinaison  de $Y$ et $I^{(3)}_W$.
+
+% \begin{eqnarray}
+%   \label{eq:ewk_mix}
+%   W^{\pm}_\mu = \frac{1}{\sqrt{2}}(W^{(1)}_\mu \mp W^{(2)}_\mu)  \\
+%   Z_\mu = -B_\mu\ sin\ \theta_W + W^{(3)}_\mu cos\ \theta_W \\
+%   A_\mu = B_\mu\ cos\ \theta_W + W^{(3)}_\mu sin\ \theta_W
+% \end{eqnarray}
+
+% L'angle de mélange électrofaible, $\theta_W$, est un paramètre du
+% modèle. Les nombres quantiques $I^{(3)}_W$ et $Y$ déterminent la
+% charge électrique à travers la relation
+% \begin{eqnarray}
+%   Q = \frac{Y}{2} + I^{(3)}_W
+% \end{eqnarray}
+
 La constante de couplage électrique, $e$, est reliée à la constante de
-couplage faible, $g_W$, à travers l'angle de mélange:
+couplage faible, $g_W$, à travers l'angle de mélange $\theta_W$ qui
+est un paramètre du modèle: 
 \begin{eqnarray}
+\label{eq:egw}
   e = g_W\ sin\ \theta_W
 \end{eqnarray}
 
-Le boson $Z$ et le photon sont les médiateurs de la force
-électrofaible neutre. Les interactions dans ce secteurs conservent la
-charge et les nombres leptoniques et baryoniques. Par conséquent, les
-couplages possibles sont entre le boson et un paire
+Le boson $Z$ et le photon sont les médiateurs de la force faible
+neutre et électromagnétique. Les interactions dans ce secteurs
+conservent la charge et les nombres leptoniques et baryoniques. Par
+conséquent, les couplages possibles sont entre le boson et un paire
 fermion-antifermion de même saveur.
 
-Les bosons $W$ sont chargés et conséquemment, la valeur absolue de la
-charge des deux particules au sommet doivent être
-différente. L'interaction faible chargé est la plus spéciales du MS en
-ce sens qu'elle viole la conservation de saveur: les leptons couplent
-avec leur neutrinos respectifs et les quarks sont couplés les uns aux
-autres, la force des couplages étant donnés par la matrice CKM.
+Les bosons $W$ sont chargés et conséquemment, la valeur de la charge
+des deux particules au sommet doivent être différente. L'interaction
+faible chargé est la plus spéciales du modèle standard en ce sens
+qu'elle viole la conservation de saveur: les leptons couplent avec
+leur neutrinos respectifs et les quarks de charge -1/3 sont
+couplés à ceux de charge 2/3.
 
 \subsubsection{Secteur Higgs}
 % Higgs
 Un problème avec la théorie électrofaible est que les bosons sont sans
-masses, ce qui est évidemment en désaccord avec les observations
-expérimentales (voir table~\ref{tab:ms_particules}). Le champ de Higgs
-est donc incorporé au MS pour expliquer le mécanisme par lequel les
-bosons électrofaibles acquièrent leurs masses. Une conséquence
-expérimentale importante de ce champ est la présence d'un boson
-scalaire neutre massif, le Higgs, qui a été confirmée en 2012 par les
-expériences ATLAS~\cite{aad_observation_2012} et~CMS~\cite{chatrchyan_observation_2012}.
+masses, ce qui est en désaccord avec les observations
+expérimentales. Le champ de Higgs est donc incorporé au modèle
+standard pour expliquer le mécanisme par lequel les bosons
+électrofaibles acquièrent leurs masses. Une conséquence expérimentale
+importante de ce champ est la présence d'un boson scalaire neutre
+massif, le Higgs, qui a été confirmée en 2012 par les expériences
+ATLAS~\cite{aad_observation_2012}
+et~CMS~\cite{chatrchyan_observation_2012}.
 
 \subsubsection{Secteur chromodynamique}
 % QCD
 Le Modèle Standard est complété par le secteur chromodynamique, qui
 décrit l'interaction entre particules portant une couleur. Le
 médiateur de cette force est le gluon, et il existe seulement des
-couplages qqg, ggg et gggg puisque les leptons et les autres bosons ne
-sont pas colorés. L'interaction chromodynamique est aussi appelée
-force forte.
-
-Une caractéristique importante de cette force est que sa
-constante de couplage, $\alpha_s$, décroît lorsque l'échelle d'énergie
-augmente: ce phénomène est appelé \emph{liberté asymptotique}. La
-figure~\ref{fig:alpha_s} montre un sommaire des principales mesures
-d'$\alpha_s$ à diverse échelles d'énergie, confirmant solidement cette
-particularité de la théorie.
+couplages quark-quark-$g$, $ggg$ et $gggg$ puisque les leptons et les
+autres bosons ne sont pas colorés. L'interaction chromodynamique est
+aussi appelée force forte. Une caractéristique importante de cette
+force est que sa constante de couplage, $\alpha_s$, décroît lorsque
+l'échelle d'énergie augmente: ce phénomène est appelé \emph{liberté
+  asymptotique}. La figure~\ref{fig:alpha_s} montre un sommaire des
+principales mesures d'$\alpha_s$ à diverse échelles d'énergie,
+confirmant solidement cette particularité de la théorie.
 
 \begin{figure}
   \centering
@@ -172,19 +191,20 @@ confinés dans des états liés, puisque la constante de couplage
 augmente rapidement alors que l'échelle de distance augmente. Pour
 produire des interactions fortes en laboratoire, il faut donc
 collisionner des états liés de quarks et gluons, communément appelés
-\emph{hadrons}. Or, ceci complique les calculs, puisqu'on ne sait pas
-entre quels constituants une interaction donnée a eu lieu. Il faut
-donc exprimer les sections efficaces en termes de fonctions de
-structures qui paramètrent le contenue en parton~\footnote{parton
-  $\equiv$ quark, anti-quark ou gluon} d'un hadron donné. Ces
-fonctions ne sont en général pas calculables théoriquement, donc elles
-doivent plutôt êtres exprimées en terme des fonctions de densités de
-partons (PDF) $f_q(x,Q^2)$ calculées expérimentalement et exprimée en
-fonction de la fraction de l'impulsion du hadron porté par le parton
-$q$ et l'échelle d'énergie du processus $Q^2$. Une représentation
-graphique de la PDF du proton
+\emph{hadrons}. Or, ceci complique les calculs, puisqu'il n'est pas
+possible de savoir entre quels constituants une interaction donnée a
+eu lieu. Il faut donc exprimer les sections efficaces en termes de
+fonctions de structures qui paramètrent le contenue en
+parton~\footnote{parton $\equiv$ quark, anti-quark ou gluon} d'un
+hadron donné. Ces fonctions ne sont en général pas calculables
+théoriquement, donc elles doivent plutôt êtres exprimées en terme des
+fonctions de densités de partons (PDF) calculées expérimentalement et
+exprimée en fonction de la fraction de l'impulsion du hadron porté par
+un parton donné et l'échelle d'énergie du processus. Une
+représentation graphique de la PDF du proton
 \texttt{NNPDF2.3}~\cite{ball_parton_2013} est montrée dans la
-figure~\ref{fig:pdf}.
+figure~\ref{fig:pdf}, où il est possible de voir que le proton n'est
+pas seulement constitué de quarks $u$ et $d$.
 
 \begin{figure}
   \centering
@@ -197,17 +217,17 @@ figure~\ref{fig:pdf}.
   \label{fig:pdf}
 \end{figure}
 
-Les interactions peuvent avoir des partons libres dans l'état
+Les interactions peuvent engendrer des partons libres dans l'état
 final. Or, la liberté asymptotique veut qu'ils soient confinés en
 états liés; il y a donc une phase successive d'\emph{hadronisation},
 lors de laquelle les quarks irradient des gluons et les gluons se
 désintègrent en pairs quarks-antiquarks, de façon à créer une cascade
 de hadrons dans l'état final (voir
 figure~\ref{fig:hadronisation}). Les hadrons d'une même cascade
-tendent à être collimés dans une même direction et forment donc des
+tendent à être collimés dans une même direction et forment des
 dépôts d'énergie dans les calorimètres appelés
 \emph{gerbes}~\footnote{Traduction du terme anglais
-  «jet»}~\cite{thomson_modern_2013}.
+  «jet»}.
 
 \begin{figure}
   \centering
