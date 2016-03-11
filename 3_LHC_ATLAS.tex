@@ -9,18 +9,18 @@
 
 % intro
 Le Grand Collisionneur de Hadron~\cite{evans_lhc_2008}, noté
-LHC~\footnote{De l'anglais \emph{Large Hadron Collider}}, est un
-accélérateur de particules situé au CERN sur la frontière franco-suisse
-près de Genève le long d'un tunnel circulaire de 27 km de
-circonférence.  Ce tunnel a été creusé dans les années 80 pour
-accueillir le collisionneur électron-positron LEP qui a été en opération
-jusqu'en 2000 pour ensuite céder sa place au LHC.
+LHC~\footnote{De l'anglais, \emph{Large Hadron Collider}}, est un
+accélérateur de particules situé au CERN sur la frontière
+franco-suisse près de Genève le long d'un tunnel circulaire de 27 km
+de circonférence.  Ce tunnel a été creusé dans les années 80 pour
+accueillir le collisionneur électron-positron LEP qui a cessé ses
+opérations en 2000 pour permettre la construction du LHC.
 
 Le LHC est un accélérateur de hadron utilisé principalement pour
-collisionneur deux faisceaux de protons et aussi, dans une moindre
+collisionner deux faisceaux de protons et aussi, dans une moindre
 mesure, pour des collisions plomb-plomb ou plomb-proton. Il opère
-présentement à une énergie de 6.5 TeV par faisceau par nucléon, en
-faisant l'accélérateur de particules le plus puissant à ce
+présentement à une énergie de 6.5 TeV par faisceau par nucléon ce qui
+en fait l'accélérateur de particules le plus puissant à ce
 jour~\cite{olive_parameters_2014}.
 
 % détecteurs
@@ -52,23 +52,23 @@ Les expériences ATLAS et CMS visent une haute luminosité
 $L = 10^{34} cm^2 s^1$, ce qui représente 40 millions de collisions
 entre paquets de protons à toutes les
 secondes~\cite{collaboration_atlas_2008}. La luminosité dépendant du
-nombre de particules dans chaque paquet et linéairement du nombre de
+nombre de particules dans chaque paquet et du nombre total de
 paquets, il est crucial d'obtenir des faisceau de très hautes
-intensités, ce qui exclu l'utilisation de faisceaux d'anti-protons
-qui sont difficiles à produire. Cela complique la conception de la
-ligne de faisceau puisqu'il doit y avoir deux champs électromagnétique
-dans des directions opposées pour accélérer les deux faisceaux de
-protons. Il y a donc, en réalité, deux lignes de faisceau% , comme
-% montré dans la figure~\ref{fig:dipôle}~\cite{evans_lhc_2008}.
+intensités, ce qui exclu l'utilisation d'un faisceau d'anti-protons
+difficile à produire. Cela complique la conception de la ligne
+de faisceau puisqu'il doit y avoir deux champs électromagnétique dans
+des directions opposées pour accélérer les deux faisceaux de
+protons. Il y a donc, en réalité, deux lignes de faisceau comme
+illustré dans la figure~\ref{fig:dipole}~\cite{evans_lhc_2008}.
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=.5\textwidth]{dipole.pdf}
-%   \caption{Coupe d'un aimant dipôle du LHC, où on voit les deux lignes
-%     de faisceau où les protons voyagent en sens opposés. Figure tirée
-%     de la référence~\cite{evans_lhc_2008}}
-% \label{fig:dipôle}
-% \end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.4\textwidth]{dipole.pdf}
+  \caption{Coupe d'un aimant dipôle du LHC, où on voit les deux lignes
+    de faisceau où les protons voyagent en sens opposés. Figure tirée
+    de la référence~\cite{evans_lhc_2008}}
+\label{fig:dipole}
+\end{figure}
 
 % chaine d'accélération
 Le LHC est conçu pour accélérer des protons d'une énergie initiale de
@@ -77,7 +77,7 @@ avoir une énergie considérable dès leur injection dans le LHC, il doit
 nécessairement y avoir un accélérateur en amont. En réalité, ce sont
 quatre accélérateurs différents, déjà présents sur le site du CERN
 avant la construction du LHC, qui servent de ligne d'injection (voir
-figure~\ref{fig:lhc_injection}. Au tout début se trouve le LINAC II,
+figure~\ref{fig:lhc_injection}). Au tout début se trouve le LINAC II,
 un accélérateur linéaire. Le faisceau initial est ensuite transféré
 successivement dans le \emph{proton-synchrotron booster},
 \emph{proton-synchrotron} et le \emph{super-proton-synchrotron}, pour
@@ -85,7 +85,7 @@ finalement être transféré au LHC~\cite{evans_lhc_2008}.
 
 \begin{figure}
   \centering
-  \includegraphics{lhc_injection.pdf}
+  \includegraphics[width=.5\textwidth]{lhc_injection.pdf}
   \caption{Ligne d'injection du LHC. Figure tiré de la
     référence~\cite{Lefevre:1165534}}
   \label{fig:lhc_injection}
@@ -102,7 +102,7 @@ dérives, est décrit dans la
 section~\ref{sec:lhc_atlas:atlas:indet}. Les calorimètres
 électromagnétiques et hadroniques sont traités dans la
 section~\ref{sec:lhc_atlas:atlas:calo}, le spectromètre à muons dans
-la section~\ref{sec:lhc_atlas:atlas:mu} et finalement le système
+la section~\ref{sec:lhc_atlas:atlas:mu}. Finalement le système
 d'acquisition des données est décrit dans la
 section~\ref{sec:lhc_atlas:atlas:daq}.
 
@@ -121,30 +121,28 @@ et les interactions qui s'y produise a son origine au point
 d'interaction. L'axe $z$ est dans la direction du faisceau, l'axe $x$
 pointe vers le centre de l'anneau formé par le tunnel du LHC et l'axe
 $y$ est orienté vers le haut. Le plan $x-y$ défini la direction
-transverse, dans laquelle plusieurs quantité sont calculées. L'angle
-dans ce plan, donc autour de l'axe $z$, est noté $\phi$.
+transverse, dans laquelle plusieurs quantité sont calculées puisque
+l'impulsion initiale y est nulle. L'angle dans ce plan, donc autour de
+l'axe $z$, est noté $\phi$.
 
 Il est possible d'associer une \emph{rapidité}
-$y = \frac{1}{2}ln((E + p_Z)/(E - p_Z))$ Il est commun d'utiliser une
-paramétrisation de cette quantité, la \emph{pseudo-rapidité}, définie
-en fonction de l'angle polaire $\theta$ (mesuré à partir de
-l'axe~$z$), $\eta = -ln(tan(\theta/2))$. Cette coordonnée est très
-utile puisque la section efficace différentielle de la production de
-gerbes est approximativement constante en
-$\eta$l~\cite{thomson_modern_2013}. Les directions dans le plan $y-z$
-définies par quelques valeurs de $\eta$ sont montrés dans la
-figure~\ref{fig:eta}.
-
+$y = \frac{1}{2}ln((E + p_Z)/(E - p_Z))$ aux objets massifs. Il est
+commun d'utiliser une paramétrisation de cette quantité, la
+\emph{pseudo-rapidité}, définie en fonction de l'angle polaire
+$\theta$ (mesuré à partir de l'axe~$z$), $\eta =
+-ln(tan(\theta/2))$. Cette coordonnée est très utile puisque la
+section efficace différentielle de la production de gerbes est
+approximativement constante en $\eta$l~\cite{thomson_modern_2013}. Les
+directions dans le plan $y-z$ définies par quelques valeurs de $\eta$
+sont montrés dans la figure~\ref{fig:eta}. La distance entre
+différents objets est souvent défini dans l'espace $\eta-\phi$:
+$\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$.
 \begin{figure}[h]
   \centering
   \includegraphics[width=.5\textwidth]{eta.png}
   \caption{Directions définies par quelques valeurs de $\eta$ dans le plan $y-z$.}
   \label{fig:eta}
 \end{figure}
-
-La distance entre différents objets est souvent défini dans l'espace
-$\eta-\phi$: $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$.
-
 
 \subsection{Le détecteur interne}
 \label{sec:lhc_atlas:atlas:indet}
@@ -154,10 +152,11 @@ $\eta-\phi$: $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$.
 \subsubsection{PIXEL}
 
 Le détecteur PIXEL est la composante d'ATLAS la plus près du
-faisceau. Il s'agit de trois assemblages cylindriques coaxiaux de
-senseurs en silicium segmentés en pixels. Le PIXEL permet donc
-d'obtenir la distribution en deux dimensions des dépôts de charges
-engendrés par les particules chargés traversant le détecteur.
+faisceau. Il s'agit de trois assemblages cylindriques coaxiaux au
+centre et trois disques aux extrémités munis de senseurs en silicium
+segmentés en pixels. Le PIXEL permet donc d'obtenir la distribution en
+deux dimensions des dépôts de charges engendrés par les particules
+chargés traversant le détecteur.
 
 À cause des haut taux de productions de particules produites lors de
 l'opération du LHC à luminosité maximale et à cause de sa proximité au
@@ -182,15 +181,18 @@ PIXEL illumine plus d'un pixel. Ce phénomène est due, entre autre, à
 la dérive des électrons dans au champ magnétique axial du détecteur
 interne, aux rayons-$\delta$ (électrons éjectés de leurs sites) et au
 fait que deux particules peuvent passer simultanément très près les
-unes des autres à haute luminosité. Cette dernière cause peut avoir un
-effet dramatique sur la précision de l'estimation de position des
-particules et arrive fréquemment dans les gerbes hadroniques de très
-hautes énergies. Pour mitiger ce problème, un algorithme utilisant des
-réseaux de neurones est utilisé pour estimer le nombre de particule
-dans chaque groupe de pixels contiguës ainsi que leurs
+unes des autres lors de collisions à haute luminosité. Cette dernière
+situation peut avoir un effet dramatique sur la précision de
+l'estimation de position des particules et arrive fréquemment dans les
+gerbes hadroniques de très hautes énergies. Pour mitiger ce problème,
+un algorithme utilisant des réseaux de neurones (voir
+section~\ref{sec:susy_atlas:dl:ml}) est utilisé pour estimer le nombre
+de particule dans chaque groupe de pixels contiguës ainsi que leurs
 positions~\cite{collaboration_neural_2014}, permettant de quasiment
-retrouver la résolution de conception optimale, soit $10~\mu$m dans la direction $x$ locale ($R-\phi$ globale)
-et $115~\mu$m dans la direction $y$ locale ($z$ globale), comme le montre la figure~\ref{fig:pixel_acc}.
+retrouver la résolution de conception optimale, soit $10~\mu$m dans la
+direction $x$ locale ($R-\phi$ globale) et $115~\mu$m dans la
+direction $y$ locale ($z$ globale), comme le montre la
+figure~\ref{fig:pixel_acc}.
 
 \begin{figure}
   \centering
@@ -214,7 +216,7 @@ affectent la couche la plus près du points d'interaction, la
 retraçage peut être sérieusement dégradés. Au moment de la
 construction du détecteur, il n'y avait cependant pas assez de place
 entre la couche-$B$ et le tuyau de la ligne de faisceau pour y
-installer une couche additionnelle. Or, Or, une contrainte importante
+installer une couche additionnelle. Or, une contrainte importante
 dans le choix de ce rayon est l'instabilité du plancher de la caverne
 ATLAS, qui avait été estimé à environ 5~mm. Or, des mesures effectués
 entre 2003 et 2007 on démontré que cette instabilité est plutôt de
@@ -236,15 +238,16 @@ la position du sommet d'interaction est grandement améliorée.
 % SCT
 \subsubsection{SCT}
 
-Au dessus du pixel se trouve le \emph{Semiconductor Tracker},
-ou SCT, un ensemble de 4 assemblages cylindriques de plusieurs
-senseurs à micro-bandes de silicium. À la différence d'un senseur à
-pixel, les senseurs sont implantés en bandes parallèles sur la plaque
-de silicium, et donc chaque module fourni une mesure de position dans
-une seule direction. Pour obtenir de l'information dans les deux
-directions ($z$ et $R-\phi$), les modules sont installés en paires
-séparés par un angle de 40~mrad, comme le montre la
-figure~\ref{fig:sct}, définissant une grille en 2 dimensions.
+Au dessus du pixel se trouve le \emph{Semiconductor Tracker}, ou SCT,
+un ensemble de 4 assemblages cylindriques au centre et de quatre
+disques aux extrémités munis de plusieurs senseurs à micro-bandes de
+silicium. À la différence d'un senseur à pixel, les senseurs sont
+implantés en bandes parallèles sur la plaque de silicium, et donc
+chaque module fourni une mesure de position dans une seule
+direction. Pour obtenir de l'information dans les deux directions ($z$
+et $R-\phi$), les modules sont installés en paires séparés par un
+angle de 40~mrad, comme le montre la figure~\ref{fig:sct}, définissant
+une grille en 2 dimensions.
 
 \begin{figure}[h]
   \centering
@@ -260,8 +263,8 @@ La précision des mesures du SCT est de 17~$\mu$m dans la direction
 $R-\phi$ et de 580~$\mu$m dans la direction $z$. Ces mesures sont
 moins précises que celles du PIXEL, mais le SCT fourni quatre mesures
 additionnelles de position à relativement bonne précision et à moindre
-coût que le PIXEL, représentant un bon compromis pour améliorer la
-performance du retraçage.
+coût qu'un détecteur de type pixel de taille comparable, représentant
+un bon compromis pour améliorer la performance du retraçage.
 
 
 % TRT
@@ -274,9 +277,9 @@ de diamètres en polyimide sont recouvert à l'intérieur d'une couche
 d'aluminium, définissant ainsi la cathode. Au centre se trouve un fil
 de tungstène plaqué avec de l'or, définissant l'anode. Une différence
 de potentiel de $\approx -1500$~V est appliquée entre l'anode et la
-cathode. Les tube sont remplis d'un mélange de xénon (70\%), de CO$_2$
-(27\%) et d'O$_2$ (3\%). Le TRT est divisé en trois sections: une
-section centrale cylindrique avec des tubes parallèles au faisceau
+cathode. Les tube sont remplis d'un mélange de xénon ou d'argon, de
+CO$_2$ et d'O$_2$. Le TRT est divisé en trois sections:
+une section centrale cylindrique avec des tubes parallèles au faisceau
 séparés en deux au centre et deux disques aux extrémités avec des
 tubes dans la direction radiale.
 
@@ -284,19 +287,20 @@ Lorsqu'une particule chargée Passe à travers un tube, elle ionise le
 mélange gazeux et amorce une cascade d'électrons et d'ions qui
 dérivent vers l'anode et la cathode, créant ainsi un signal. La forme
 du signal est analysée pour mesurer le temps de dérive de la cascade
-qui, avec une calibration appropriée (voir figure~\ref{fig:trt}),
+qui, avec une calibration appropriée %(voir figure~\ref{fig:trt})
+,
 permet de mesurer la distance entre la particule et l'anode. La
 position de l'anode étant précisément connue, cela permet donc de
 mesurer une position en $R-\phi$ avec une précision de 130~$\mu$m.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{trt.pdf}
-  \caption{Relation entre le temps de dérive et la distance par
-    rapport à l'anode dans le TRT. Figure tirée de la
-    référence~\cite{ATLAS-CONF-2011-006}}
-  \label{fig:trt}
-\end{figure}
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{trt.pdf}
+%   \caption{Relation entre le temps de dérive et la distance par
+%     rapport à l'anode dans le TRT. Figure tirée de la
+%     référence~\cite{ATLAS-CONF-2011-006}}
+%   \label{fig:trt}
+% \end{figure}
 
 %% electron ID
 Lorsqu'une particule chargée traverse l'interface entre deux milieux
@@ -363,15 +367,17 @@ suivantes, optimisées pour calorimétrie hadronique).
 \label{sec:lhc_atlas:atlas:mu}
 
 Les particules chargées perdent de l'énergie en interagissant avec le
-milieu selon l'équation de Bethe-Bloch, montrée dans la figure~\ref{fig:bethe-bloch}. Il
-existe un régime, $1 \le\beta\gamma\le 10$ (approximativement), pour
-lequel la perte d'énergie est à un minimum. Une particule dans ce
-régime est à son minimum d'ionisation. Il se trouve que la grande
-majorité des muons produits dans les collisions au LHC sont près du
-minimum d'ionisation et donc traversent les calorimètres sans être
-arrêtés, ce qui motive l'installation de détecteurs dédiés aux muons
-au-delà des calorimètres, permettant d'améliorer substantiellement
-l'identification et la précision des mesures d'impulsions des muons.
+milieu selon l'équation de Bethe-Bloch, montrée dans la
+figure~\ref{fig:bethe-bloch}. Il existe un régime,
+$1 \le\beta\gamma\le 10$ (approximativement), pour lequel la perte
+d'énergie est à un minimum. Une particule dans ce régime est à son
+minimum d'ionisation. Il se trouve que la grande majorité des muons
+produits dans les collisions au LHC sont près du minimum d'ionisation
+et donc sont les seules particules chargés qui traversent les
+calorimètres sans être arrêtés, ce qui motive l'installation de
+détecteurs dédiés aux muons au-delà des calorimètres, permettant
+d'améliorer substantiellement l'identification et la précision des
+mesures d'impulsions des muons.
 
 \begin{figure}
   \centering
@@ -410,7 +416,7 @@ zones du détecteur ou encore un grand déficit d'impulsion transverse
 dans une direction (calculée par conservation de l'impulsion). Ce
 premier niveau défini des zones d'intérêts en $\eta-\phi$ qui sont
 ensuite relayé à un ensemble de serveurs sur lesquels des logiciels
-analysent les zones d'intérêts pour déterminer si l'événement est
+font une analyse plus détaillé pour déterminer si l'événement est
 intéressant ou non~\cite{collaboration_atlas_2008}.
 
 %%% Local Variables:

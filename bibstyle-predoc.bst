@@ -4,9 +4,9 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `head,exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
-%% french.mbs  (with options: `exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
-%% merlin.mbs  (with options: `tail,exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
+%% merlin.mbs  (with options: `head,exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,blk-com,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
+%% french.mbs  (with options: `exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,blk-com,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
+%% merlin.mbs  (with options: `tail,exlang,seq-no,nm-rvvc,nmlm,x2,m2,yr-par,xmth,tit-it,jttl-rm,thtit-a,vol-bf,vnum-x,volp-blk,jdt-vs,jpg-1,num-xser,url-doi,blk-com,french,ppx,abr,xedn,jabr,eprint,url,url-nl,nfss,,{}')
 %% ----------------------------------------
 %% ***  ***
 %% 
@@ -139,7 +139,7 @@ FUNCTION {add.blank}
 
 FUNCTION {date.block}
 {
-  new.block
+  skip$
 }
 
 FUNCTION {not}
@@ -594,7 +594,7 @@ FUNCTION {n.dashify}
 }
 
 FUNCTION {word.in}
-{ bbl.in capitalize
+{ bbl.in
   " " * }
 
 FUNCTION {format.date}
@@ -899,7 +899,6 @@ FUNCTION {format.book.crossref}
       pop$ word.in
     }
     { bbl.volume
-      capitalize
       swap$ tie.or.space.prefix "volume" bibinfo.check * * bbl.of space.word *
     }
   if$
@@ -972,9 +971,7 @@ FUNCTION {format.organization.address}
 FUNCTION {article}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title "title" output.check
-  new.block
   crossref missing$
     {
       journal
@@ -986,7 +983,6 @@ FUNCTION {article}
       format.pages output
     }
   if$
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1004,23 +1000,18 @@ FUNCTION {book}
       if$
     }
   if$
-  new.block
   format.btitle "title" output.check
   crossref missing$
     { format.bvolume output
-      new.block
       format.number.series output
-      new.sentence
       format.publisher.address output
     }
     {
-      new.block
       format.book.crossref output.nonnull
     }
   if$
   format.edition output
   format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1029,13 +1020,10 @@ FUNCTION {book}
 FUNCTION {booklet}
 { output.bibitem
   format.authors output
-  new.block
   format.title "title" output.check
-  new.block
   howpublished "howpublished" bibinfo.check output
   address "address" bibinfo.check output
   format.date output
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1054,26 +1042,21 @@ FUNCTION {inbook}
       if$
     }
   if$
-  new.block
   format.btitle "title" output.check
   crossref missing$
     {
       format.bvolume output
       format.chapter.pages "chapter and pages" output.check
-      new.block
       format.number.series output
-      new.sentence
       format.publisher.address output
     }
     {
       format.chapter.pages "chapter and pages" output.check
-      new.block
       format.book.crossref output.nonnull
     }
   if$
   format.edition output
   format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1083,15 +1066,12 @@ FUNCTION {inbook}
 FUNCTION {incollection}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title "title" output.check
-  new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
       format.bvolume output
       format.number.series output
       format.chapter.pages output
-      new.sentence
       format.publisher.address output
       format.edition output
       format.date "year" output.check
@@ -1100,7 +1080,6 @@ FUNCTION {incollection}
       format.chapter.pages output
     }
   if$
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1109,15 +1088,12 @@ FUNCTION {incollection}
 FUNCTION {inproceedings}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title "title" output.check
-  new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
       format.bvolume output
       format.number.series output
       format.pages output
-      new.sentence
       publisher empty$
         { format.organization.address output }
         { organization "organization" bibinfo.check output
@@ -1130,7 +1106,6 @@ FUNCTION {inproceedings}
       format.pages output
     }
   if$
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1149,26 +1124,22 @@ FUNCTION {manual}
     }
     { format.authors output.nonnull }
   if$
-  new.block
   format.btitle "title" output.check
   author empty$
     { organization empty$
         {
-          address new.block.checka
           address "address" bibinfo.check output
         }
         'skip$
       if$
     }
     {
-      organization address new.block.checkb
       organization "organization" bibinfo.check output
       address "address" bibinfo.check output
     }
   if$
   format.edition output
   format.date output
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1178,15 +1149,12 @@ FUNCTION {manual}
 FUNCTION {mastersthesis}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title
   "title" output.check
-  new.block
   bbl.mthesis format.thesis.type output.nonnull
   school "school" bibinfo.warn output
   address "address" bibinfo.check output
   format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1196,12 +1164,9 @@ FUNCTION {mastersthesis}
 FUNCTION {misc}
 { output.bibitem
   format.authors output
-  title howpublished new.block.checkb
   format.title output
-  howpublished new.block.checka
   howpublished "howpublished" bibinfo.check output
   format.date output
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1211,15 +1176,12 @@ FUNCTION {misc}
 FUNCTION {phdthesis}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title
   "title" output.check
-  new.block
   bbl.phdthesis format.thesis.type output.nonnull
   school "school" bibinfo.warn output
   address "address" bibinfo.check output
   format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1233,7 +1195,6 @@ FUNCTION {proceedings}
     }
     { format.editors output.nonnull }
   if$
-  new.block
   format.btitle "title" output.check
   format.bvolume output
   format.number.series output
@@ -1241,17 +1202,14 @@ FUNCTION {proceedings}
     { publisher empty$
         'skip$
         {
-          new.sentence
           format.publisher.address output
         }
       if$
     }
     { publisher empty$
         {
-          new.sentence
           format.organization.address output }
         {
-          new.sentence
           organization "organization" bibinfo.check output
           format.publisher.address output
         }
@@ -1259,7 +1217,6 @@ FUNCTION {proceedings}
      }
   if$
       format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1269,15 +1226,12 @@ FUNCTION {proceedings}
 FUNCTION {techreport}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title
   "title" output.check
-  new.block
   format.tr.number output.nonnull
   institution "institution" bibinfo.warn output
   address "address" bibinfo.check output
   format.date "year" output.check
-  new.block
   format.note output
   format.eprint output
   fin.entry
@@ -1287,10 +1241,8 @@ FUNCTION {techreport}
 FUNCTION {unpublished}
 { output.bibitem
   format.authors "author" output.check
-  new.block
   format.title "title" output.check
   format.date output
-  new.block
   format.note "note" output.check
   format.eprint output
   fin.entry

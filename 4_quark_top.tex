@@ -54,19 +54,20 @@ partenaires supersymétriques des quarks de troisième génération ainsi
 que le gluino doivent avoir une masse de l'ordre du TeV pour que le
 problème de la hiérarchie des masses soit réglé dans le MSSM.  Dans
 plusieurs réalisation du MSSM ayant ces propriétés, le mode de
-désintégration en $\rightarrow t + \chi_1^0$ est parmi les modes
+désintégration en top + $\tilde{\chi}_1^0$ est parmi les modes
 dominants pour le stop et le sbottom. Les particules supersymétriques
 étant produites en paires, il y a possibilité de créer une paire de
 quarks top lors de production directe de stops et sbottoms. De plus,
 si les masses des squarks de première et deuxième générations sont
 plus élevées que la masse du gluino, alors ce dernier désintègre
-préférablement en une paire stop/sbottom + neutralino si les masses
-des stops et des sbottoms sont plus petites que la sienne ou en un
-triplet $t-t-\chi_1^0$ via un stop/sbottom virtuel sinon.  Lors de
-production de paires de gluinos, il peut donc y avoir jusqu'à quatre
-quarks tops dans l'état final. Les masses du gluino, du stop et du
-sbottom sont au moins de l'ordre du TeV donc beaucoup plus grande que
-celle du top, ce qui lui permet d'acquérir une grande impulsion
+préférablement en une paire $\tilde{t}$ ou $\tilde{b}$ +
+$\tilde{\chi}_1^0$ si les masses des stops et des sbottoms sont plus
+petites que la sienne ou en un triplet top + top + $\tilde{\chi}_1^0$
+via un stop/sbottom virtuel sinon.  Lors de production de paires de
+gluinos, il peut donc y avoir jusqu'à quatre quarks tops dans l'état
+final. Les masses du gluino, du stop et du sbottom sont au moins de
+l'ordre du TeV donc beaucoup plus grande que celle du top, ce qui lui
+permet d'acquérir une grande impulsion
 transverse~\cite{bandyopadhyay_boosted_2011}.
 
 Puisque la production de paires $t\overline{t}$ a une grande
@@ -97,17 +98,17 @@ section~\ref{sec:top:sous_structure:tau_ij}.
 \label{sec:top:sous_structure:masse}
 
 La reconstruction d'une gerbe à partir des données enregistrées par
-ATLAS commence par la formation de grappes~\footnote{De l'anglais,
-  \emph{clusters}} contiguës en trois dimensions de cellules de
-calorimètres activées au-dessus d'un certain seuil. Ces grappes,
-auxquelles sont associée une quadri-impulsion de masse nulle, sont
-ensuite regroupées en gerbes dans un certain rayon qui est un
-paramètre de l'algorithme de regroupement. Lors des simulations Monte
-Carlo, les constituants sont plutôt les quadri-impulsions avec masse des
-particules générées. Une masse peut alors être associée à la gerbe en
-fonction de l'énergie et de l'impulsion des grappes constituantes:
+ATLAS commence par la formation de grappes contiguës en trois
+dimensions de cellules de calorimètres activées au-dessus d'un certain
+seuil. Ces grappes, auxquelles sont associée une quadri-impulsion de
+masse nulle, sont ensuite regroupées en gerbes dans un certain rayon
+qui est un paramètre de l'algorithme de regroupement. Lors des
+simulations Monte Carlo, les constituants sont plutôt les
+quadri-impulsions avec masse des particules générées. Une masse peut
+alors être associée à la gerbe en fonction de l'énergie et de
+l'impulsion des grappes constituantes:
 \begin{equation}
-  m_{jet} = \left(\sum_iE_i\right)^2 - \left(\sum_i\overrightarrow{p}\right)^2
+  m_{gerbe} = \left(\sum_iE_i\right)^2 - \left(\sum_i\overrightarrow{p}\right)^2
 \end{equation}
 
 Les gerbes originant des quarks top ont, en moyenne, une plus grande
@@ -134,10 +135,12 @@ figure~\ref{fig:mass_distr}.
 
 La variable N-subjetiness, $\tau_N$, est une quantité qui caractérise
 une gerbe comme contenant $N$ sous-gerbes. Pour calculer cette
-variable, il faut d'abord regrouper les constituants d'une gerbe en
-$N$ sous-gerbes de rayon plus petits que la gerbe originale. Ensuite,
-$\tau_N$ est calculée comme étant la somme pondéré par l'impulsion
-transverse de la distance entre chaque constituant et la sous-gerbe la plus proche:
+variable, il faut d'abord regrouper les constituants~\footnote{grappes
+  de cellules de calorimètre dans les données, particules dans les
+  simulations} d'une gerbe en $N$ sous-gerbes de rayon plus petits que
+la gerbe originale. Ensuite, $\tau_N$ est calculée comme étant la
+somme pondéré par l'impulsion transverse de la distance entre chaque
+constituant et la sous-gerbe la plus proche:
 \begin{eqnarray}
   \tau_N = \frac{\sum_kp_T^{(k)}\ min\{\Delta R_{1,k},\Delta R_{2,k},\ldots,\Delta R_{N,k}\}}{\sum_kp_TR_0}
 \end{eqnarray}

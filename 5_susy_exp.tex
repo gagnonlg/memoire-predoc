@@ -32,8 +32,8 @@ cadre de recherches de physique au-delà du Modèle Standard.
 % Mécanismes de production
 Parmi les processus supersymétriques possibles, les productions de
 paires squark-squark, gluino-gluino ou squark-gluino ont des sections
-efficaces très élevées au LHC, comme le montre la
-figure~\ref{fig:susy_xsec}.
+efficaces très élevées au LHC~\cite{olive_susy2_2014}, comme le montre
+la figure~\ref{fig:susy_xsec}.
 
 \begin{figure}
   \centering
@@ -54,15 +54,15 @@ l'impulsion transverse des protons initiaux ainsi que de leur
 constituant peut être négligée, La somme vectorielle de l'impulsion
 transverse de toutes les particules produites lors d'une interaction
 devrait être nulle, par la conservation de l'impulsion. Or, certaines
-particules comme les neutrinos ne sont pas détectés ce qui engendre un
-impulsion transverse manquante, $\slashed{E}_T$. Assumant la
-conservation de la R-parité~(voir section~\ref{sec:susy:R}), il va toujours y avoir une paire de
-$\chi_1^0$ stables dans l'état final d'une cascade
-supersymétrique. Ces particules ne sont pas chargés et interagissent
-seulement faiblement, donc traversent le détecteur sans être
-dépistées. Une deuxième signature caractéristique d'un processus
-supersymétrique est donc un $\slashed{E}_T$ très
-grand~\cite{olive_susy2_2014}.
+particules comme les neutrinos ne sont pas détectés ce qui engendre
+une impulsion transverse manquante, noté $\slashed{E}_T$. Assumant la
+conservation de la R-parité~(section~\ref{sec:susy:R}), il va toujours
+y avoir une paire de $\tilde{\chi}_1^0$ stables dans l'état final d'une
+cascade supersymétrique. Ces particules ne sont pas chargés et
+interagissent seulement faiblement, donc traversent le détecteur sans
+être dépistées. Une deuxième signature caractéristique d'un processus
+supersymétrique est donc une $\slashed{E}_T$ très
+élevée~\cite{olive_susy2_2014}.
 
 
 \section{Recherche des gluinos se désintégrant en tops}
@@ -73,12 +73,13 @@ Comme vu précédemment, les recherches de stops avec masses de l'ordre
 du TeV au LHC sont bien motivées à cause du problème de la hiérarchie
 des masses. La figure~\ref{fig:susy_xsec} montre cependant que la
 section efficace de paires de stops est plus faible que, par exemple,
-la section efficace gluino-gluino. Dans plusieurs réalisation du
-MSSM, le gluino a un grand rapport d'embranchement pour les
-désintégrations
-$\tilde{g} \rightarrow \tilde{t} t$~\cite{bandyopadhyay_boosted_2011}
-ce qui motive la recherche du stop dans le contexte de la production
-de paires de gluinos. 
+la section efficace gluino-gluino. Dans plusieurs réalisation du MSSM,
+le gluino a un grand rapport d'embranchement pour les désintégrations
+$\tilde{g} \rightarrow \tilde{t} t$~\cite{bandyopadhyay_boosted_2011}.
+De plus, le gluino doit aussi avoir une masse de l'ordre du TeV pour
+que le MSSM règle le problème de la hiérarchie des masses, ce qui
+motive la recherche du stop dans le contexte de la production de
+paires de gluinos.
 
 Comme vu à la section~\ref{sec:top:boosted:susy}, ces processus
 engendrent typiquement des états finaux avec haute multiplicité de
@@ -125,10 +126,10 @@ Standard pour déterminer s'il y a eu production de particules supersymétriques
 \noindent Les variables utilisés sont:
 
 \begin{itemize}
-\item $N_{gerbe}$, le nombre de gerbes hadroniques avec impulsion $> 30$~GeV
+\item $N_{gerbe}$, le nombre de gerbes hadroniques %avec impulsion $> 30$~GeV
 \item $N_b$, le nombre de gerbes identifiés comme originant d'un quark $b$ (gerbes-$b$)
 \item $N_{t}$, le nombre de gerbes identifiés comme originant d'un
-  quark $t$, selon un discriminant basé sur la masse de la gerbe
+  quark top, selon un discriminant basé sur la masse de la gerbe
 \item $\slashed{E}_T$, tel que définie dans la
   section~\ref{sec:susy_atlas:signatures}
 \item $m_T$, la masse transverse de $\slashed{E}_T$ et du lepton le
@@ -136,12 +137,15 @@ Standard pour déterminer s'il y a eu production de particules supersymétriques
 \item $m_{T,min}^b$, la masse transverse minimale de $\slashed{E}_T$ et
   d'une des gerbes-$b$
 \item $m_{eff}$ la somme scalaire des impulsions des gerbes et des leptons, et de $\slashed{E}_T$.
-
 \end{itemize}
 
-Ces variables définissent un certains nombres de régions de
-signal. Par exemple, il y a deux régions de signal dans le canal
-semileptonique tel que résumé dans la table~\ref{tab:sr}.
+Différents seuils sur ces variables définissent des \emph{régions de
+  signal} dans lesquels le bruit de fond $t\overline{t}$ est fortement
+supprimé. Les définitions des différentes régions se trouve dans la
+référence~\cite{ATLAS-CONF-2015-067}.
+
+% Par exemple, il y a deux régions de signal dans le canal
+% semileptonique tel que résumé dans la table~\ref{tab:sr}.
 
 % \begin{table}
 %   \centering
@@ -170,7 +174,7 @@ Des régions de contrôle riches en bruit de fond et pauvre en signal
 sont définies en inversant certains seuils, et sont utilisés pour
 estimer le montant de bruit de fond dans les données et en dériver un
 facteur de correction pour les simulations Monte Carlo. Ces estimés sont ensuite
-vérifié dans des régions de validations, entre les régions de signal
+vérifiés dans des régions de validations, entre les régions de signal
 et de contrôle. La figure~\ref{fig:pull} montre que l'estimation du
 bruit de fond dans les régions de validation dans les simulations
 Monte Carlo est en accord avec le bruit de fond observé dans les
@@ -178,7 +182,7 @@ collisions.
 
 \begin{figure}
   \centering
-  \includegraphics[width=.8\textwidth]{pull.pdf}
+  \includegraphics[width=.7\textwidth]{pull.pdf}
   \caption{Comparaison Monte Carlo vs données des nombres d'événements
     dans les régions de validation. Figure tirée de la
     référence~\cite{ATLAS-CONF-2015-067}}
@@ -208,15 +212,17 @@ processus avec stop virtuel.
 \label{sec:susy_atlas:dl}
 
 % intro
-Du fait du grand volume de données produites par le détecteur ATLAS,
-il est très important d'utiliser des approches statistiques à la
-fine pointe de la technologie dans le cadre de recherches de nouvelles
-physique au LHC. Une avenue future possible est de prendre avantage du
+Du fait du grand volume de données produites par le détecteur ATLAS et
+des signaux difficiles à reconnaitres qui sont recherchés, il est très
+important d'utiliser des approches statistiques à la fine pointe de la
+technologie dans le cadre de recherches de nouvelles physique au
+LHC. Une avenue future possible est de prendre avantage du
 développement récent de techniques d'\emph{apprentissage
-  profond}~\footnote{De l'anglais, \emph{Deep Learning}} ayant
+  profond}~\footnote{De l'anglais, \emph{Deep
+    Learning}}~\cite{lecun_deep_2015, schmidhuber_deep_2015} ayant
 récemment fait grand bruit en informatique à cause de leur performance
 phénoménale mais dont l'utilisation en physique des particules reste
-anecdotique.
+marginale.
  
 \subsection{L'apprentissage machine}
 \label{sec:susy_atlas:dl:ml}
@@ -234,7 +240,7 @@ non-linéairement,
   y_j(\overrightarrow{x}) = h\left(\sum_jw_{ij}x_j + b_i\right)
 \end{eqnarray}
 
-\noindent où la fonction $h$ est une \emph{activation} non-linéaire. Plusieurs
+\noindent où la fonction $h$ est une fonction non-linéaire. Plusieurs
 de ces neurones peuvent être arrangés en réseau, produisant un modèle
 très expressif dont on peut ajuster les poids pour approximer la fonction voulu.
 La figure~\ref{fig:nn} montre une représentation graphique d'un tel
@@ -277,7 +283,7 @@ signal/bruit de fond consiste à élaborer des variables physiques qui
 encapsulent certaines caractéristiques du signal recherché. La
 puissance des modèles d'apprentissage profond permet cependant
 d'utiliser directement des quantités de plus bas niveau, comme par
-exemple les impulsions des gerbes. Ces modèles sont capable d'utiliser
+exemple les quadri-impulsions des gerbes. Ces modèles sont capable d'utiliser
 ces variables pour obtenir un pouvoir de discrimination plus élevé que
 celui des variables de haut niveau élaborés par les physiciens, tel
 qu'illustré dans la figure~\ref{fig:deep} pour un signal
